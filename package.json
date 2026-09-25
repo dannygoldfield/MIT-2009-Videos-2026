@@ -1,0 +1,15 @@
+{
+  "name": "mit-2009-videos-2026",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MIT 2.009 selected video collection with previews and original MP4 downloads.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "python3 build.py",
+    "test": "python3 build.py && node --test tests/*.test.mjs",
+    "start": "python3 build.py && node preview.mjs"
+  }
+}

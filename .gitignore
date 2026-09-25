@@ -1,0 +1,13 @@
+# Generated output (recreate with npm run build)
+site/
+dist/
+video-manifest.json
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+.wrangler/

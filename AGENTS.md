@@ -1,0 +1,12 @@
+# MIT 2.009 Videos 2026
+
+This is the four-video public collection at https://mit-2009-videos-2026.pages.dev/.
+
+- Preserve the selected catalog items 1, 3, 6, and 9 unless requested otherwise.
+- Item 6 is titled "2025 Finals"; its old working title was Lecture 1.
+- Keep source videos unchanged; do not recompress them for storage.
+- Edit assets/CATALOG.json for titles, descriptions, and media references.
+- site/, dist/, and video-manifest.json are generated; use python3 build.py.
+- Run npm test when changing video delivery or the build process.
+- The Cloudflare site uses dashboard Direct Upload, not automatic GitHub deployment.
+- Keep secrets and credentials out of Git. Do not change unrelated Test Studio or HPR projects.
