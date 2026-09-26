@@ -1,6 +1,12 @@
-# MIT 2.009 — Videos to share
+# MIT 2.009 — All Tests and Selects
 
-[Open the public collection](https://mit-2009-videos-2026.pages.dev/)
+- [All Tests](https://mit-2009-videos-2026.pages.dev/): all sixteen videos, newest first.
+- [Selects](https://mit-2009-videos-2026.pages.dev/selects/): items 1, 3, 6, 9, 20, and 25, newest first. This is the link to share with people who may post the videos.
+
+Selects shows only the chosen videos and has no navigation back to All Tests.
+Both pages use the same original MP4s, posters, and catalog numbers. Existing links
+and video downloads remain valid. To change the picks, edit `assets/SELECTS.json`,
+rebuild, and upload the site again.
 
 Sixteen videos with browser previews and original-quality MP4 downloads. The page
 has a light background, simple controls, and links to the separate looping
@@ -38,6 +44,7 @@ and settle on photo 15. The mixed-team tests sample 54 portraits (nine per team)
 - `assets/videos/`: the sixteen original MP4s, with the Finals filename updated.
 - `assets/previews/`: the sixteen poster images.
 - `assets/CATALOG.json`: titles, descriptions, timings, links, and file hashes.
+- `assets/SELECTS.json`: catalog numbers to show on the share page.
 - `build.py`: creates the website and Cloudflare upload ZIP.
 - `video-handler.mjs`: serves MP4 playback, seeking, and downloads.
 - `preview.mjs` and `local-assets.mjs`: local preview server.
@@ -64,8 +71,8 @@ port with `PORT=8793 npm start`.
 1. Change the text or file references in `assets/CATALOG.json`. For a replacement
    video, copy the MP4 into `assets/videos/`, update its details and SHA-256 hash,
    and update its poster in `assets/previews/`.
-2. Run `npm test` to build and check the collection. It checks the sixteen selected
-   items, complete file hashes, byte-range seeking, and download filenames.
+2. Run `npm test` to build and check the collection. It checks all sixteen
+   items, Selects membership, complete file hashes, byte-range seeking, and download filenames.
 3. Run `npm start` to review the page. Commit source changes to Git when ready.
 
 The collection count comes from the catalog. If adding videos, update the
@@ -78,7 +85,7 @@ selection test too. Page layout, styling, and browser controls currently live in
 2. In Cloudflare, open **Workers & Pages → mit-2009-videos-2026 → Create deployment**.
 3. Choose **Production**, upload that ZIP, wait for all files to finish uploading,
    then choose **Save and deploy**.
-4. Open https://mit-2009-videos-2026.pages.dev/ and check playback and downloads.
+4. Open both All Tests and Selects and check playback and downloads.
 
 This is a Direct Upload project. Pushing to GitHub backs up source code and media;
 it does **not** automatically republish the Cloudflare site. No hosting account

@@ -6,10 +6,19 @@ import { Readable } from 'node:stream';
 export function localAssets(root, honorRanges = true) {
   return { async fetch(request) {
     const pathname = decodeURIComponent(new URL(request.url).pathname);
-    const path = resolve(root, '.' + (pathname === '/' ? '/index.html' : pathname));
-    if (!path.startsWith(resolve(root) + sep)) return new Response(null, { status: 403 });
+    let path = resolve(root, '.' + pathname);
+    if (path !== resolve(root) && !path.startsWith(resolve(root) + sep)) return new Response(null, { status: 403 });
     let info;
     try { info = await stat(path); } catch { return new Response(null, { status: 404 }); }
+    if (info.isDirectory()) {
+      if (!pathname.endsWith('/')) {
+        const url = new URL(request.url);
+        url.pathname += '/';
+        return Response.redirect(url, 301);
+      }
+      path = resolve(path, 'index.html');
+      try { info = await stat(path); } catch { return new Response(null, { status: 404 }); }
+    }
     if (!info.isFile()) return new Response(null, { status: 404 });
     const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.jpg': 'image/jpeg', '.bin': 'application/octet-stream' }[extname(path)] || 'text/plain';
     const headers = new Headers({ 'Content-Type': mime });

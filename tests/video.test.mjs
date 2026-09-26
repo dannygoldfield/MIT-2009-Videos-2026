@@ -13,7 +13,7 @@ const env = { ASSETS: localAssets(root) };
 const [path, video] = Object.entries(manifest)[0];
 const req = (route = path, options = {}) => new Request('https://example.com' + route, options);
 
-test('the original selection plus twelve headshot reel tests', () => {
+test('All Tests preserves the four slideshows and twelve headshot reel tests', () => {
   assert.equal(Object.keys(manifest).length, 16);
   assert.ok(manifest['/videos/MIT-2.009-2025-Finals-1p0s.mp4']);
   assert.ok(manifest['/videos/MIT-2.009-Yellow-Slot-A-Quick-8s-Portrait-15.mp4']);
@@ -75,8 +75,41 @@ test('conditional requests and static pages', async () => {
   assert.equal((html.match(/<article/g) || []).length, 16);
   assert.ok(html.includes('2025 Finals'));
   assert.ok(html.includes('16 videos.'));
+  assert.ok(html.includes('<h1>All Tests</h1>'));
+  assert.ok(html.includes('href="/selects/"'));
   assert.ok(html.includes('With sound'));
   assert.ok(!html.includes('No audio'));
   assert.deepEqual([...html.matchAll(/id="video-(\d+)"/g)].map(m => Number(m[1])), [29,28,27,26,25,24,23,22,21,20,19,18,9,6,3,1]);
   assert.ok(!html.includes('Lecture 1'));
+});
+
+test('Selects contains only Danny’s six picks, newest first, using the original files', async () => {
+  const response = await handler.fetch(req('/selects/'), env);
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.ok(html.includes('<h1>Selects</h1>'));
+  assert.ok(html.includes('6 selected videos. Watch, download, and post.'));
+  assert.deepEqual([...html.matchAll(/id="video-(\d+)"/g)].map(m => Number(m[1])), [25,20,9,6,3,1]);
+  assert.ok(!html.includes('href="/"'), 'Share page should not lead recipients to experiments');
+  const catalog = JSON.parse(await readFile(new URL('../assets/CATALOG.json', import.meta.url)));
+  const chosen = catalog.filter(r => [1,3,6,9,20,25].includes(r.number));
+  const sources = [...html.matchAll(/<source src="([^"]+)"/g)].map(m => m[1]);
+  assert.equal(sources.length, 6);
+  for (const r of chosen) {
+    const route = '/' + r.file;
+    assert.ok(sources.includes(route));
+    assert.ok(manifest[route]);
+    assert.ok(html.includes(`href="${route}?download=1"`));
+    assert.ok(html.includes(`poster="/${r.thumbnail}"`));
+  }
+});
+
+test('Selects directory redirects and serves HEAD requests in local preview', async () => {
+  const redirect = await handler.fetch(req('/selects'), env);
+  assert.equal(redirect.status, 301);
+  assert.equal(redirect.headers.get('Location'), 'https://example.com/selects/');
+  const head = await handler.fetch(req('/selects/', { method: 'HEAD' }), env);
+  assert.equal(head.status, 200);
+  assert.equal(head.body, null);
+  assert.equal(head.headers.get('Content-Type'), 'text/html');
 });
