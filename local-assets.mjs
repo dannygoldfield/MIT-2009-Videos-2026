@@ -20,7 +20,7 @@ export function localAssets(root, honorRanges = true) {
       try { info = await stat(path); } catch { return new Response(null, { status: 404 }); }
     }
     if (!info.isFile()) return new Response(null, { status: 404 });
-    const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.jpg': 'image/jpeg', '.bin': 'application/octet-stream' }[extname(path)] || 'text/plain';
+    const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.jpg': 'image/jpeg', '.bin': 'application/octet-stream', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' }[extname(path)] || 'text/plain';
     const headers = new Headers({ 'Content-Type': mime });
     let start = 0, end = info.size - 1, status = 200;
     const range = /^bytes=(\d+)-(\d+)$/.exec(request.headers.get('Range') || '');

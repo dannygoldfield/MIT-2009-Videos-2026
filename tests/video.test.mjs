@@ -13,8 +13,8 @@ const env = { ASSETS: localAssets(root) };
 const [path, video] = Object.entries(manifest)[0];
 const req = (route = path, options = {}) => new Request('https://example.com' + route, options);
 
-test('All Tests preserves the four slideshows and sixteen headshot reel tests', () => {
-  assert.equal(Object.keys(manifest).length, 20);
+test('All Tests preserves the four slideshows and twenty headshot reel tests', () => {
+  assert.equal(Object.keys(manifest).length, 24);
   assert.ok(manifest['/videos/MIT-2.009-2025-Finals-1p0s.mp4']);
   assert.ok(manifest['/videos/MIT-2.009-Yellow-Slot-A-Quick-8s-Portrait-15.mp4']);
   assert.ok(manifest['/videos/MIT-2.009-Yellow-Slot-B-Slow-11s-Portrait-15.mp4']);
@@ -72,14 +72,14 @@ test('conditional requests and static pages', async () => {
   await mismatch.body.cancel();
   const index = await handler.fetch(req('/tests/'), env);
   const html = await index.text();
-  assert.equal((html.match(/<article/g) || []).length, 20);
+  assert.equal((html.match(/<article/g) || []).length, 24);
   assert.ok(html.includes('2025 Finals'));
-  assert.ok(html.includes('20 videos.'));
+  assert.ok(html.includes('24 videos.'));
   assert.ok(html.includes('<h1>All Tests</h1>'));
   assert.ok(html.includes('href="/"'));
   assert.ok(html.includes('With sound'));
   assert.ok(!html.includes('No audio'));
-  assert.deepEqual([...html.matchAll(/id="video-(\d+)"/g)].map(m => Number(m[1])), [33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,9,6,3,1]);
+  assert.deepEqual([...html.matchAll(/id="video-(\d+)"/g)].map(m => Number(m[1])), [37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,9,6,3,1]);
   assert.ok(!html.includes('Lecture 1'));
 });
 
@@ -115,4 +115,22 @@ test('All Tests directory redirects and serves HEAD requests in local preview', 
   assert.equal(head.status, 200);
   assert.equal(head.body, null);
   assert.equal(head.headers.get('Content-Type'), 'text/html');
+});
+
+test('all four disco auditions offer their original MP3 and WAV files', async () => {
+  const html = await (await handler.fetch(req('/tests/'), env)).text();
+  const catalog = JSON.parse(await readFile(new URL('../assets/CATALOG.json', import.meta.url)));
+  const auditions = catalog.filter(r => r.number >= 34 && r.number <= 37);
+  assert.equal(auditions.length, 4);
+  for (const r of auditions) {
+    for (const [field, type] of [['audio_mp3','audio/mpeg'],['audio_wav','audio/wav']]) {
+      const route = '/' + r[field];
+      assert.ok(html.includes(`href="${route}" download`));
+      const response = await handler.fetch(req(route), env);
+      assert.equal(response.status, 200);
+      assert.equal(response.headers.get('Content-Type'), type);
+      const original = await readFile(new URL('../assets' + route, import.meta.url));
+      assert.deepEqual(Buffer.from(await response.arrayBuffer()), original);
+    }
+  }
 });
