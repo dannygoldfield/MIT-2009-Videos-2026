@@ -20,7 +20,7 @@ Balloon Bloom uses a 7-second transition and a 0.5-second hold. Student
 headshots use 1.2 seconds per photo. 2025 Finals uses 1 second per photo;
 Theme Reveal uses 1.4 seconds. Items 01 and 03 loop in the preview player.
 Both reel tests use one column of Yellow Team portraits, bounce at the stop,
-and settle on photo 15. They do not loop. Only one preview plays at a time. The original catalog numbering is intentional.
+and settle on photo 15. They do not loop. Only one preview plays at a time. The original catalog numbering is intentional. The page shows the newest additions first; append future videos to assets/CATALOG.json.
 
 ## What is included
 

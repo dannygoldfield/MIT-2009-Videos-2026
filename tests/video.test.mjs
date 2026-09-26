@@ -77,6 +77,6 @@ test('conditional requests and static pages', async () => {
   assert.ok(html.includes('6 videos.'));
   assert.ok(html.includes('With sound'));
   assert.ok(!html.includes('No audio'));
-  assert.deepEqual([...html.matchAll(/id="video-(\d+)"/g)].map(m => Number(m[1])), [1,3,6,9,18,19]);
+  assert.deepEqual([...html.matchAll(/id="video-(\d+)"/g)].map(m => Number(m[1])), [19,18,9,6,3,1]);
   assert.ok(!html.includes('Lecture 1'));
 });
