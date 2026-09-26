@@ -1,0 +1,369 @@
+{
+  "file": "MIT-2.009-All-Teams-Slot-Color-Bloom-18s-Silent.mp4",
+  "effect": "Color-Bloom",
+  "retainNeighbors": false,
+  "seconds": 18,
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "audio": "none",
+  "target": 15,
+  "count": 54,
+  "availableHeadshots": 108,
+  "sampling": "Nine random portraits per team; winner fixed for comparison",
+  "stopTime": 13.3,
+  "settledTime": 14,
+  "celebrationAt": 13.78,
+  "palette": [
+    {
+      "team": "Yellow",
+      "hex": "#F5CE19"
+    },
+    {
+      "team": "Red",
+      "hex": "#E8414A"
+    },
+    {
+      "team": "Green",
+      "hex": "#38AA6A"
+    },
+    {
+      "team": "Pink",
+      "hex": "#F184B6"
+    },
+    {
+      "team": "Blue",
+      "hex": "#348DDB"
+    },
+    {
+      "team": "Purple",
+      "hex": "#955BCD"
+    }
+  ],
+  "photos": [
+    {
+      "number": 51,
+      "team": "Green",
+      "filename": "51-26-09-15-Headshots-0136.jpg",
+      "sha256": "0a72570b6f3511171795a549e52a9977e06c57300b3580dec76a1347c52d17c4"
+    },
+    {
+      "number": 66,
+      "team": "Pink",
+      "filename": "66-26-09-15-Headshots-0359.jpg",
+      "sha256": "6b371fefa37c254ba1b70ce4481ccf1e0b7e6b55227fe640dbe1fc42b6854166"
+    },
+    {
+      "number": 103,
+      "team": "Purple",
+      "filename": "103-26-09-16-Headshots-0179.jpg",
+      "sha256": "2370b008bdc26ac2a1d71ce8f39f9faa3c960854797b23d3ebb326125d01cd7f"
+    },
+    {
+      "number": 74,
+      "team": "Pink",
+      "filename": "74-26-09-15-Headshots-0457.jpg",
+      "sha256": "e420eb8f04fee59cede41d0df189c9ff35cb6422dbe80ae3003ec8a64ad1ab46"
+    },
+    {
+      "number": 90,
+      "team": "Blue",
+      "filename": "90-26-09-15-Headshots-0702.jpg",
+      "sha256": "0347e9e95ec25607f1f474a23876cab0081a2299cc068959f291f48402829991"
+    },
+    {
+      "number": 29,
+      "team": "Red",
+      "filename": "29-26-09-14-Headshots-0286.jpg",
+      "sha256": "8194320ca4220191cc120f4050ce9d36b8c98c8ccdc5f954317951a77bb7073a"
+    },
+    {
+      "number": 75,
+      "team": "Blue",
+      "filename": "75-26-09-15-Headshots-0465.jpg",
+      "sha256": "00c515b748755d65550e7c8e7da73633025b05b51f36d7c7501b5a37210d322a"
+    },
+    {
+      "number": 43,
+      "team": "Green",
+      "filename": "43-26-09-15-Headshots-0062.jpg",
+      "sha256": "4c4e1f11c85ec8709e68a1b02f0fcc5b2dba35d948869daaab725e29cc138c2a"
+    },
+    {
+      "number": 105,
+      "team": "Purple",
+      "filename": "105-26-09-16-Headshots-0193.jpg",
+      "sha256": "8efd915ea16fc92f5a6316a05f9aaccf3fb2f546f1f32ebda69adeb61a8be91a"
+    },
+    {
+      "number": 24,
+      "team": "Red",
+      "filename": "24-26-09-14-Headshots-0246.jpg",
+      "sha256": "f463cb66e2d1e5c3e4e43bbcc46cafdb3c7ab9f0ea1b1d4313cd9c42bdd998e0"
+    },
+    {
+      "number": 13,
+      "team": "Yellow",
+      "filename": "13-26-09-14-Headshots-0141.jpg",
+      "sha256": "d83ef9510be097b3ac5265b8664e7bf358a06385b2a4fac4fe8c0acfa47d409b"
+    },
+    {
+      "number": 26,
+      "team": "Red",
+      "filename": "26-26-09-14-Headshots-0264.jpg",
+      "sha256": "969437e01b11bc1f3fb53fd53c0ad2fcb433322369e3d8741518294a9faa32a4"
+    },
+    {
+      "number": 18,
+      "team": "Yellow",
+      "filename": "18-26-09-14-Headshots-0441.jpg",
+      "sha256": "c358523c826945d083752701eb8ae2cdfe7a6d8667f9803af3d148b26fa122a6"
+    },
+    {
+      "number": 97,
+      "team": "Purple",
+      "filename": "97-26-09-16-Headshots-0086.jpg",
+      "sha256": "cecf26957137c0ab9a74742cc9471a211859cce2fc6b2d6b2f50053acbfd6481"
+    },
+    {
+      "number": 69,
+      "team": "Pink",
+      "filename": "69-26-09-15-Headshots-0389.jpg",
+      "sha256": "f6b4c15977c9c436bd72cc05c7d051a3ccd06d489f3da0e105b4feb1fd9e841b"
+    },
+    {
+      "number": 108,
+      "team": "Purple",
+      "filename": "108-26-09-16-Headshots-0240.jpg",
+      "sha256": "4603f13037d262101d33f3bf38dce28586f293fce067cbde4aead11f328e27b2"
+    },
+    {
+      "number": 50,
+      "team": "Green",
+      "filename": "50-26-09-15-Headshots-0126.jpg",
+      "sha256": "0f06f6f7e380333cf69a5ee43a4ea09215fc582ec0ca55013013211901c80b72"
+    },
+    {
+      "number": 109,
+      "team": "Blue",
+      "filename": "109-Blue-Team-Additional-Headshot.jpg",
+      "sha256": "08d75e8e0a9335dfad51fa02bf4ba4cc17f12f98572cb032556016e57846e303"
+    },
+    {
+      "number": 9,
+      "team": "Yellow",
+      "filename": "09-26-09-14-Headshots-0104.jpg",
+      "sha256": "7866dc5bd7c16123edcfc1ee5cff387b245ffd6bc242dc7df9d2bee04de89f60"
+    },
+    {
+      "number": 88,
+      "team": "Blue",
+      "filename": "88-26-09-15-Headshots-0655-Edit.jpg",
+      "sha256": "5bc4d05f405a5799df94c8cd2f956d7b14b893ca2f5f923d987d0abd8ae1133e"
+    },
+    {
+      "number": 62,
+      "team": "Pink",
+      "filename": "62-26-09-15-Headshots-0285.jpg",
+      "sha256": "328d04d899571389d1af178455fe59627a4238c18e476904a5a1dbe7df78c4e1"
+    },
+    {
+      "number": 21,
+      "team": "Red",
+      "filename": "21-26-09-14-Headshots-0215.jpg",
+      "sha256": "0ecb3dfc12b1975e3e0443eb4d2865bb01e6f76861692e9c4b9a0746020512ad"
+    },
+    {
+      "number": 41,
+      "team": "Green",
+      "filename": "41-26-09-15-Headshots-0048.jpg",
+      "sha256": "7d6b13a5c26f456d5945013ac45151f8862605ae816bd62ba8d834bab710df74"
+    },
+    {
+      "number": 73,
+      "team": "Pink",
+      "filename": "73-26-09-15-Headshots-0441.jpg",
+      "sha256": "6a7c530ee86f30a6f3d5b2d1f5d7b217cbf18e5920264202966fd8e8f806e13a"
+    },
+    {
+      "number": 40,
+      "team": "Green",
+      "filename": "40-26-09-15-Headshots-0041.jpg",
+      "sha256": "04cd9a1d993f63359cc67c73b5ee504133dbb95cf30243ef5907174b0591e68a"
+    },
+    {
+      "number": 104,
+      "team": "Purple",
+      "filename": "104-26-09-16-Headshots-0187.jpg",
+      "sha256": "bcff61bb6d5ecda356cf20098c9e4bd4c1e508eb65158b4eea6eae135df6df90"
+    },
+    {
+      "number": 27,
+      "team": "Red",
+      "filename": "27-26-09-14-Headshots-0275.jpg",
+      "sha256": "8f0544295dfe449fc9bb50fd5e0005de7fba647a8c1b153dd0625be1664688f5"
+    },
+    {
+      "number": 36,
+      "team": "Green",
+      "filename": "36-26-09-15-Headshots-0007.jpg",
+      "sha256": "d2f68f0552c579efb08ee4916fa269364a67c6ac32abc79a4fbafb3687819023"
+    },
+    {
+      "number": 10,
+      "team": "Yellow",
+      "filename": "10-26-09-14-Headshots-0113.jpg",
+      "sha256": "3db5ee85af8e7649273f8b737310b3087c51aa8ebaf55cde4054f6712fd86812"
+    },
+    {
+      "number": 56,
+      "team": "Pink",
+      "filename": "56-26-09-15-Headshots-0209.jpg",
+      "sha256": "9ae91fca7c7dadb8b5b240337eb2bbdfcf7fc359e2896f9fb2b812b82daade21"
+    },
+    {
+      "number": 3,
+      "team": "Yellow",
+      "filename": "03-26-09-14-Headshots-0046.jpg",
+      "sha256": "d39c1a4ee44d3dfeb0a61f720354f8dd6487a4e0424b4aef46f5e05aaf22a125"
+    },
+    {
+      "number": 82,
+      "team": "Blue",
+      "filename": "82-26-09-15-Headshots-0601.jpg",
+      "sha256": "c8e7fd269df7446cfd26d06425396dfa347eeeb0e93309a2e4407804226d1dcc"
+    },
+    {
+      "number": 14,
+      "team": "Yellow",
+      "filename": "14-26-09-14-Headshots-0153.jpg",
+      "sha256": "f3e43521f6cffa27565595ba23e6037e5d089dc69072ba9fd9d2558a9ee18d56"
+    },
+    {
+      "number": 83,
+      "team": "Blue",
+      "filename": "83-26-09-15-Headshots-0617.jpg",
+      "sha256": "7525377807a0aa2f428a0b8e58d16cb0dbfbf4c19a483c3b8cc04370ca5e84cd"
+    },
+    {
+      "number": 20,
+      "team": "Red",
+      "filename": "20-26-09-14-Headshots-0199.jpg",
+      "sha256": "3677dbe33a04f172bf1496f68f55ba671cb6db5ee0280110370fa66722c245aa"
+    },
+    {
+      "number": 54,
+      "team": "Green",
+      "filename": "54-26-09-15-Headshots-0162-Edit.jpg",
+      "sha256": "9ed0f6927bbf131888c8f5d4bfae767ab0583e6068bfb62f0a9199539c7a8153"
+    },
+    {
+      "number": 91,
+      "team": "Purple",
+      "filename": "91-26-09-16-Headshots-0007.jpg",
+      "sha256": "4d772d39973ab51c460f4c928034b8da9a811b26a4cc3403a1bd8c6760ac4c0e"
+    },
+    {
+      "number": 70,
+      "team": "Pink",
+      "filename": "70-26-09-15-Headshots-0404.jpg",
+      "sha256": "2ca07aac86749a664b392369fb8407de56180a1f76c0ebaf1a2a3c695ea76a01"
+    },
+    {
+      "number": 23,
+      "team": "Red",
+      "filename": "23-26-09-14-Headshots-0237.jpg",
+      "sha256": "03bde51744c06c22f51d93ffcbc1420c060c242159fa24ceb501480dbcbc51d6"
+    },
+    {
+      "number": 65,
+      "team": "Pink",
+      "filename": "65-26-09-15-Headshots-0348.jpg",
+      "sha256": "da59ceb3cf8603e87f9199357bfb36b54407f1fd9e2aaeb4771279b7e4c4e89a"
+    },
+    {
+      "number": 100,
+      "team": "Purple",
+      "filename": "100-26-09-16-Headshots-0140.jpg",
+      "sha256": "15a10bb29e6991d31cbb645c2790adbc793adf9407f6041a846f4c7d39458304"
+    },
+    {
+      "number": 77,
+      "team": "Blue",
+      "filename": "77-26-09-15-Headshots-0493.jpg",
+      "sha256": "f0d29e43e7026579200869270e1d63dc2b38b903ab9bb18acfa2dc65fbc4162b"
+    },
+    {
+      "number": 11,
+      "team": "Yellow",
+      "filename": "11-26-09-14-Headshots-0121.jpg",
+      "sha256": "bfdc2879b93e8242d682eecb638ac9cf30dd5c7eeb657ad88052483df5eaba82"
+    },
+    {
+      "number": 22,
+      "team": "Red",
+      "filename": "22-26-09-14-Headshots-0221.jpg",
+      "sha256": "ae9695664045a4ed6838854d521987890da41e3212fc6a6dd7fb21e68c41180a"
+    },
+    {
+      "number": 95,
+      "team": "Purple",
+      "filename": "95-26-09-16-Headshots-0063.jpg",
+      "sha256": "6300c683158eef914cdc5c8244f15798c47851501448b9a5f7d9ca2e73574811"
+    },
+    {
+      "number": 67,
+      "team": "Pink",
+      "filename": "67-26-09-15-Headshots-0366.jpg",
+      "sha256": "a656e144a467aed92848ccbd00eed0e6d6795709c975c74096746d29e1a0c4b7"
+    },
+    {
+      "number": 35,
+      "team": "Red",
+      "filename": "35-26-09-14-Headshots-0391.jpg",
+      "sha256": "480191230774cea5d9a9aeded8a3563c99e424d0c1afb3058c01aafd42ff89c8"
+    },
+    {
+      "number": 4,
+      "team": "Yellow",
+      "filename": "04-26-09-14-Headshots-0053.jpg",
+      "sha256": "f88ff26091a8cd64f85ced90c14a90ec13405579b4f96079d0e1fd2d7f5fb3db"
+    },
+    {
+      "number": 87,
+      "team": "Blue",
+      "filename": "87-26-09-15-Headshots-0650.jpg",
+      "sha256": "04a067a4e67540546fe68a3f33c43f11b53c97659e7359bef3097a64f7e88a8d"
+    },
+    {
+      "number": 42,
+      "team": "Green",
+      "filename": "42-26-09-15-Headshots-0056-Edit.jpg",
+      "sha256": "57cf4207bc660c5c1918e8cf9237a983021f6b4c1c284f125879e339195953fa"
+    },
+    {
+      "number": 76,
+      "team": "Blue",
+      "filename": "76-26-09-15-Headshots-0481.jpg",
+      "sha256": "6555bc1df4eb84133b527cf0fe367fe691e1241bf8307d8642a9fd6f6a036316"
+    },
+    {
+      "number": 49,
+      "team": "Green",
+      "filename": "49-26-09-15-Headshots-0117.jpg",
+      "sha256": "8b17c19bfca40bfefb92d3f141db6a126ffb87711835b04603098fb787a6330d"
+    },
+    {
+      "number": 96,
+      "team": "Purple",
+      "filename": "96-26-09-16-Headshots-0074.jpg",
+      "sha256": "d3cfb6bce9a54e4a8ee008b81ee79796a8d92232bb78729d657d18769f0c6b51"
+    },
+    {
+      "number": 15,
+      "team": "Yellow",
+      "filename": "15-26-09-14-Headshots-0174.jpg",
+      "sha256": "ee2c21d4c85f465484712c85b6f104864f59241753b186194620453cfb3065bd"
+    }
+  ]
+}

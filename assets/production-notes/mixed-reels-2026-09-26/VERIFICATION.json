@@ -1,0 +1,42 @@
+[
+  {
+    "file": "MIT-2.009-All-Teams-Slot-Paper-Confetti-18s-Silent.mp4",
+    "sha256": "39946cf7884d69fb14c7a8405c7fb2d8fe05e339bb347d468c69a5f0951a25b4",
+    "bytes": 18554528,
+    "seconds": 18,
+    "frames": 1080,
+    "audio_streams": 0,
+    "target": 15,
+    "headshots": 54
+  },
+  {
+    "file": "MIT-2.009-All-Teams-Slot-Color-Bloom-18s-Silent.mp4",
+    "sha256": "3b731fcd2be71b052c3e2e622900f4708140acb705bfef84bb527daa7b1129b1",
+    "bytes": 16760054,
+    "seconds": 18,
+    "frames": 1080,
+    "audio_streams": 0,
+    "target": 15,
+    "headshots": 54
+  },
+  {
+    "file": "MIT-2.009-All-Teams-Slot-Paper-Confetti-Reel-View-18s-Silent.mp4",
+    "sha256": "9ad6b3a237befc6dcab2dcacc16044e388156aebcd803a12a81f7285ae4df765",
+    "bytes": 19607278,
+    "seconds": 18,
+    "frames": 1080,
+    "audio_streams": 0,
+    "target": 88,
+    "headshots": 54
+  },
+  {
+    "file": "MIT-2.009-All-Teams-Slot-Color-Bloom-Reel-View-18s-Silent.mp4",
+    "sha256": "3ad4ead81db75de2986a5ad5363d782d1048139c40742fb985b936a87bb983e6",
+    "bytes": 17573454,
+    "seconds": 18,
+    "frames": 1080,
+    "audio_streams": 0,
+    "target": 88,
+    "headshots": 54
+  }
+]
