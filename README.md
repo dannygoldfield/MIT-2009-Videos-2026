@@ -2,11 +2,11 @@
 
 [Open the public collection](https://mit-2009-videos-2026.pages.dev/)
 
-Ten videos with browser previews and original-quality MP4 downloads. The page
+Twelve videos with browser previews and original-quality MP4 downloads. The page
 has a light background, simple controls, and links to the separate looping
 slideshows where available. The four slideshow videos are silent H.264 MP4s at 30 frames per second.
 The two original portrait reel tests are 60 fps with original ticks and a landing chime.
-Four newer mixed-team reel tests are 18 seconds at 60 fps and silent.
+Six newer mixed-team reel tests are 18 seconds at 60 fps and silent.
 
 | Original catalog number | Video | Duration |
 | --- | --- | --- |
@@ -20,17 +20,19 @@ Four newer mixed-team reel tests are 18 seconds at 60 fps and silent.
 | 21 | All teams — Color bloom | 18 seconds |
 | 22 | All teams — Paper confetti · Neighbors visible | 18 seconds |
 | 23 | All teams — Color bloom · Neighbors visible | 18 seconds |
+| 24 | Blue Team — Confetti shower | 18 seconds |
+| 25 | Blue Team — Confetti shower · Neighbors visible | 18 seconds |
 
 Balloon Bloom uses a 7-second transition and a 0.5-second hold. Student
 headshots use 1.2 seconds per photo. 2025 Finals uses 1 second per photo;
 Theme Reveal uses 1.4 seconds. Items 01 and 03 loop in the preview player.
 The original two reel tests use one column of Yellow Team portraits, bounce at the stop,
-and settle on photo 15. The four mixed-team tests sample 54 portraits (nine per team). Items 20–21 land on Yellow Team photo 15; items 22–23 land on Blue Team photo 88 and retain partial neighboring portraits above and below. Each pair compares paper confetti with a six-color bloom. None of the reel tests loop. Only one preview plays at a time. The original catalog numbering is intentional. The page shows the newest additions first; append future videos to assets/CATALOG.json.
+and settle on photo 15. The mixed-team tests sample 54 portraits (nine per team). Items 20–21 land on Yellow Team photo 15; items 22–23 land on Blue Team photo 88 and retain partial neighboring portraits above and below. Items 20–23 compare paper confetti with a six-color bloom. Items 24–25 both feature photo 88, settle two seconds sooner, and use six times as many paper particles in a foreground shower; item 24 isolates the winner, while item 25 retains neighboring portraits. None of the reel tests loop. Only one preview plays at a time. The original catalog numbering is intentional. The page shows the newest additions first; append future videos to assets/CATALOG.json.
 
 ## What is included
 
-- `assets/videos/`: the ten original MP4s, with the Finals filename updated.
-- `assets/previews/`: the ten poster images.
+- `assets/videos/`: the twelve original MP4s, with the Finals filename updated.
+- `assets/previews/`: the twelve poster images.
 - `assets/CATALOG.json`: titles, descriptions, timings, links, and file hashes.
 - `build.py`: creates the website and Cloudflare upload ZIP.
 - `video-handler.mjs`: serves MP4 playback, seeking, and downloads.
@@ -58,7 +60,7 @@ port with `PORT=8793 npm start`.
 1. Change the text or file references in `assets/CATALOG.json`. For a replacement
    video, copy the MP4 into `assets/videos/`, update its details and SHA-256 hash,
    and update its poster in `assets/previews/`.
-2. Run `npm test` to build and check the collection. It checks the ten selected
+2. Run `npm test` to build and check the collection. It checks the twelve selected
    items, complete file hashes, byte-range seeking, and download filenames.
 3. Run `npm start` to review the page. Commit source changes to Git when ready.
 

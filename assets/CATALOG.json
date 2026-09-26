@@ -188,5 +188,43 @@
     "audio": "Silent",
     "fast_start": true,
     "loop": false
+  },
+  {
+    "number": 24,
+    "title": "Blue Team — Confetti shower",
+    "description": "54 mixed-team portraits settle two seconds sooner on Blue Team photo 88. A dense six-color shower of textured paper confetti sweeps in front of the portrait and continues through the longer celebration. The selected portrait finishes alone in the center.",
+    "file": "videos/MIT-2.009-All-Teams-Slot-Dense-Paper-Confetti-18s-Silent.mp4",
+    "seconds": 18,
+    "dimensions": "1080 × 1920",
+    "format": "Portrait 9:16",
+    "photo_count": 54,
+    "size_mb": 32.4,
+    "online_url": "",
+    "thumbnail": "previews/24.jpg",
+    "sha256": "1183126f762d2081e9f5a903ae0e0f361b2fb9ed29d9b384d28d6f7c4f90819f",
+    "fps": 60,
+    "codec": "H.264",
+    "audio": "Silent",
+    "fast_start": true,
+    "loop": false
+  },
+  {
+    "number": 25,
+    "title": "Blue Team — Confetti shower · Neighbors visible",
+    "description": "54 mixed-team portraits settle two seconds sooner on Blue Team photo 88. A dense six-color shower of textured paper confetti sweeps in front of the portrait and continues through the longer celebration. Neighboring portraits remain partially visible above and below.",
+    "file": "videos/MIT-2.009-All-Teams-Slot-Dense-Paper-Confetti-Reel-View-18s-Silent.mp4",
+    "seconds": 18,
+    "dimensions": "1080 × 1920",
+    "format": "Portrait 9:16",
+    "photo_count": 54,
+    "size_mb": 32.5,
+    "online_url": "",
+    "thumbnail": "previews/25.jpg",
+    "sha256": "c135ff57af84acac76ccca74da3048b629d42fe8e5504db92c9847b5c6315286",
+    "fps": 60,
+    "codec": "H.264",
+    "audio": "Silent",
+    "fast_start": true,
+    "loop": false
   }
 ]
