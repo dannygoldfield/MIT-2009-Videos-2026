@@ -1,11 +1,14 @@
 # MIT 2.009 — All Tests and Selects
 
-- [All Tests](https://mit-2009-videos-2026.pages.dev/): all sixteen videos, newest first.
-- [Selects](https://mit-2009-videos-2026.pages.dev/selects/): items 1, 3, 6, 9, 20, and 25, newest first. This is the link to share with people who may post the videos.
+- [All Tests](https://mit-2009-videos-2026.pages.dev/tests/): all sixteen videos, newest first.
+- [Selects](https://mit-2009-videos-2026.pages.dev/): items 1, 3, 6, 9, 20, and 25, newest first. This is the link to share with people who may post the videos.
 
 Selects shows only the chosen videos and has no navigation back to All Tests.
-Both pages use the same original MP4s, posters, and catalog numbers. Existing links
-and video downloads remain valid. To change the picks, edit `assets/SELECTS.json`,
+The original root URL now shows only Selects, so people who received it earlier
+see the chosen videos. The earlier `/selects/` link shows the same collection.
+All experiments are at `/tests/`; an old root anchor for an unselected video stays
+on Selects and does not redirect to a test. Both pages use the same original MP4s,
+posters, and catalog numbers. Video download URLs remain unchanged. To change the picks, edit `assets/SELECTS.json`,
 rebuild, and upload the site again.
 
 Sixteen videos with browser previews and original-quality MP4 downloads. The page
