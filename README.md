@@ -1,6 +1,6 @@
 # MIT 2.009 — All Tests and Selects
 
-- [All Tests](https://mit-2009-videos-2026.pages.dev/tests/): all sixteen videos, newest first.
+- [All Tests](https://mit-2009-videos-2026.pages.dev/tests/): all twenty videos, newest first.
 - [Selects](https://mit-2009-videos-2026.pages.dev/): items 1, 3, 6, 9, 20, and 25, newest first. This is the link to share with people who may post the videos.
 
 Selects shows only the chosen videos and has no navigation back to All Tests.
@@ -11,11 +11,11 @@ on Selects and does not redirect to a test. Both pages use the same original MP4
 posters, and catalog numbers. Video download URLs remain unchanged. To change the picks, edit `assets/SELECTS.json`,
 rebuild, and upload the site again.
 
-Sixteen videos with browser previews and original-quality MP4 downloads. The page
+Twenty videos with browser previews and original-quality MP4 downloads. The page
 has a light background, simple controls, and links to the separate looping
 slideshows where available. The four slideshow videos are silent H.264 MP4s at 30 frames per second.
 The two original portrait reel tests are 60 fps with original ticks and a landing chime.
-Ten newer mixed-team reel tests are 18 seconds at 60 fps and silent.
+Fourteen newer mixed-team reel tests are 18 seconds at 60 fps and silent.
 
 | Original catalog number | Video | Duration |
 | --- | --- | --- |
@@ -35,17 +35,21 @@ Ten newer mixed-team reel tests are 18 seconds at 60 fps and silent.
 | 27 | Blue Team — Analog paper drift | 18 seconds |
 | 28 | Blue Team — Six pieces · Gentle sway | 18 seconds |
 | 29 | Blue Team — Six pieces · Slow turns | 18 seconds |
+| 30 | Blue Team — Digital · Neon Circuit | 18 seconds |
+| 31 | Blue Team — Digital · Prism Jackpot | 18 seconds |
+| 32 | Blue Team — Digital · Orbit | 18 seconds |
+| 33 | Blue Team — Digital · Pixel Party | 18 seconds |
 
 Balloon Bloom uses a 7-second transition and a 0.5-second hold. Student
 headshots use 1.2 seconds per photo. 2025 Finals uses 1 second per photo;
 Theme Reveal uses 1.4 seconds. Items 01 and 03 loop in the preview player.
 The original two reel tests use one column of Yellow Team portraits, bounce at the stop,
-and settle on photo 15. The mixed-team tests sample 54 portraits (nine per team). Items 20–21 land on Yellow Team photo 15; items 22–23 land on Blue Team photo 88 and retain partial neighboring portraits above and below. Items 20–23 compare paper confetti with a six-color bloom. Items 24–25 both feature photo 88, settle two seconds sooner, and use six times as many paper particles in a foreground shower; item 24 isolates the winner, while item 25 retains neighboring portraits. Items 26–27 build on item 25 with varied paper shapes and folds, simulated air currents, unequal rebounds, and fixed pools of warm interior lighting from concealed bulbs. Item 26 uses uneven party-popper bursts; item 27 uses a looser drifting shower. Both retain neighboring portraits. Items 28–29 use exactly six large paper pieces, one per team color, released at uneven intervals within 0.31 seconds and falling from top to bottom. They retain photo 88, neighboring portraits, and warm interior lighting. None of the reel tests loop. Only one preview plays at a time. The original catalog numbering is intentional. The page shows the newest additions first; append future videos to assets/CATALOG.json.
+and settle on photo 15. The mixed-team tests sample 54 portraits (nine per team). Items 20–21 land on Yellow Team photo 15; items 22–23 land on Blue Team photo 88 and retain partial neighboring portraits above and below. Items 20–23 compare paper confetti with a six-color bloom. Items 24–25 both feature photo 88, settle two seconds sooner, and use six times as many paper particles in a foreground shower; item 24 isolates the winner, while item 25 retains neighboring portraits. Items 26–27 build on item 25 with varied paper shapes and folds, simulated air currents, unequal rebounds, and fixed pools of warm interior lighting from concealed bulbs. Item 26 uses uneven party-popper bursts; item 27 uses a looser drifting shower. Both retain neighboring portraits. Items 28–29 use exactly six large paper pieces, one per team color, released at uneven intervals within 0.31 seconds and falling from top to bottom. They retain photo 88, neighboring portraits, and warm interior lighting. Items 30–33 explore modern digital slot screens: Neon Circuit, Prism Jackpot, Orbit, and Pixel Party. They use the same 54 portraits, land on photo 88 at 12 seconds, retain neighboring portraits, and celebrate with six seconds of LED chases, color pulses, rings, or pixel lights. These appear only in All Tests. None of the reel tests loop. Only one preview plays at a time. The original catalog numbering is intentional. The page shows the newest additions first; append future videos to assets/CATALOG.json.
 
 ## What is included
 
-- `assets/videos/`: the sixteen original MP4s, with the Finals filename updated.
-- `assets/previews/`: the sixteen poster images.
+- `assets/videos/`: the twenty original MP4s, with the Finals filename updated.
+- `assets/previews/`: the twenty poster images.
 - `assets/CATALOG.json`: titles, descriptions, timings, links, and file hashes.
 - `assets/SELECTS.json`: catalog numbers to show on the share page.
 - `build.py`: creates the website and Cloudflare upload ZIP.
@@ -74,7 +78,7 @@ port with `PORT=8793 npm start`.
 1. Change the text or file references in `assets/CATALOG.json`. For a replacement
    video, copy the MP4 into `assets/videos/`, update its details and SHA-256 hash,
    and update its poster in `assets/previews/`.
-2. Run `npm test` to build and check the collection. It checks all sixteen
+2. Run `npm test` to build and check the collection. It checks all twenty
    items, Selects membership, complete file hashes, byte-range seeking, and download filenames.
 3. Run `npm start` to review the page. Commit source changes to Git when ready.
 
