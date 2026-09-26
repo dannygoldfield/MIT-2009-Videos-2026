@@ -1,0 +1,40 @@
+[
+  {
+    "number": 26,
+    "title": "Blue Team — Analog party poppers",
+    "description": "Two unevenly timed party-popper bursts release clumps of textured paper that separate, tumble, and drift. Warm, uneven interior lighting and an imperfect mechanical landing. Blue Team photo 88 stays centered with neighboring portraits visible.",
+    "file": "videos/MIT-2.009-All-Teams-Slot-Analog-Party-Poppers-Reel-View-18s-Silent.mp4",
+    "seconds": 18,
+    "dimensions": "1080 × 1920",
+    "format": "Portrait 9:16",
+    "photo_count": 54,
+    "size_mb": 33.5,
+    "online_url": "",
+    "thumbnail": "previews/26.jpg",
+    "sha256": "7abfcc0529abb2c3e91d384857d288cb82e2b4f317e436e8d862051b6bd46414",
+    "fps": 60,
+    "codec": "H.264",
+    "audio": "Silent",
+    "fast_start": true,
+    "loop": false
+  },
+  {
+    "number": 27,
+    "title": "Blue Team — Analog paper drift",
+    "description": "Loose waves of textured paper float through changing air currents, with soft pieces passing close to the camera. Warm, uneven interior lighting and an imperfect mechanical landing. Blue Team photo 88 stays centered with neighboring portraits visible.",
+    "file": "videos/MIT-2.009-All-Teams-Slot-Analog-Paper-Drift-Reel-View-18s-Silent.mp4",
+    "seconds": 18,
+    "dimensions": "1080 × 1920",
+    "format": "Portrait 9:16",
+    "photo_count": 54,
+    "size_mb": 29.8,
+    "online_url": "",
+    "thumbnail": "previews/27.jpg",
+    "sha256": "ae9623107d8daebcdd93756439342b3c3b11cb791fbd9973182d5bd560736d07",
+    "fps": 60,
+    "codec": "H.264",
+    "audio": "Silent",
+    "fast_start": true,
+    "loop": false
+  }
+]

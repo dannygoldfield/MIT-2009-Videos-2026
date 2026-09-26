@@ -1,8 +1,8 @@
 # MIT 2.009 Videos 2026
 
-This is the twelve-video public collection at https://mit-2009-videos-2026.pages.dev/.
+This is the fourteen-video public collection at https://mit-2009-videos-2026.pages.dev/.
 
-- Preserve the selected catalog items 1, 3, 6, 9, 18, 19, 20, 21, 22, 23, 24, and 25 unless requested otherwise.
+- Preserve the selected catalog items 1, 3, 6, 9, 18, 19, 20, 21, 22, 23, 24, 25, 26, and 27 unless requested otherwise.
 - Item 6 is titled "2025 Finals"; its old working title was Lecture 1.
 - Keep source videos unchanged; do not recompress them for storage.
 - Edit assets/CATALOG.json for titles, descriptions, and media references.
