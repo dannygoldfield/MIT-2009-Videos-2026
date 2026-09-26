@@ -1,0 +1,40 @@
+[
+  {
+    "number": 28,
+    "title": "Blue Team — Six pieces · Gentle sway",
+    "description": "Exactly six large pieces of paper, one in each team color, released from the top at closely spaced, uneven times. A gentle feather-like sway carries them all the way off the bottom. Blue Team photo 88, visible neighboring portraits, and warm interior lighting.",
+    "file": "videos/MIT-2.009-All-Teams-Slot-Six-Paper-Pieces-Gentle-Sway-Reel-View-18s-Silent.mp4",
+    "seconds": 18,
+    "dimensions": "1080 × 1920",
+    "format": "Portrait 9:16",
+    "photo_count": 54,
+    "size_mb": 18.6,
+    "online_url": "",
+    "thumbnail": "previews/28.jpg",
+    "sha256": "078a5484686625503b7e983ba0c570035a6c5d9188681a2693aa8d10253385d2",
+    "fps": 60,
+    "codec": "H.264",
+    "audio": "Silent",
+    "fast_start": true,
+    "loop": false
+  },
+  {
+    "number": 29,
+    "title": "Blue Team — Six pieces · Slow turns",
+    "description": "Exactly six large pieces of paper, one in each team color, released from the top at closely spaced, uneven times. Slow turns and broad drifting curves carry them all the way off the bottom. Blue Team photo 88, visible neighboring portraits, and warm interior lighting.",
+    "file": "videos/MIT-2.009-All-Teams-Slot-Six-Paper-Pieces-Lazy-Spirals-Reel-View-18s-Silent.mp4",
+    "seconds": 18,
+    "dimensions": "1080 × 1920",
+    "format": "Portrait 9:16",
+    "photo_count": 54,
+    "size_mb": 18.5,
+    "online_url": "",
+    "thumbnail": "previews/29.jpg",
+    "sha256": "33d185e19135eb2283d655f2deb2684b135f9c0c81f1440bbeaee970b5c734d3",
+    "fps": 60,
+    "codec": "H.264",
+    "audio": "Silent",
+    "fast_start": true,
+    "loop": false
+  }
+]
