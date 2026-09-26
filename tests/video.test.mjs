@@ -13,8 +13,8 @@ const env = { ASSETS: localAssets(root) };
 const [path, video] = Object.entries(manifest)[0];
 const req = (route = path, options = {}) => new Request('https://example.com' + route, options);
 
-test('All Tests preserves the four slideshows and twenty headshot reel tests', () => {
-  assert.equal(Object.keys(manifest).length, 24);
+test('All Tests preserves the four slideshows and twenty-four headshot reel tests', () => {
+  assert.equal(Object.keys(manifest).length, 28);
   assert.ok(manifest['/videos/MIT-2.009-2025-Finals-1p0s.mp4']);
   assert.ok(manifest['/videos/MIT-2.009-Yellow-Slot-A-Quick-8s-Portrait-15.mp4']);
   assert.ok(manifest['/videos/MIT-2.009-Yellow-Slot-B-Slow-11s-Portrait-15.mp4']);
@@ -72,32 +72,32 @@ test('conditional requests and static pages', async () => {
   await mismatch.body.cancel();
   const index = await handler.fetch(req('/tests/'), env);
   const html = await index.text();
-  assert.equal((html.match(/<article/g) || []).length, 24);
+  assert.equal((html.match(/<article/g) || []).length, 28);
   assert.ok(html.includes('2025 Finals'));
-  assert.ok(html.includes('24 videos.'));
+  assert.ok(html.includes('28 videos.'));
   assert.ok(html.includes('<h1>All Tests</h1>'));
   assert.ok(html.includes('href="/"'));
   assert.ok(html.includes('With sound'));
   assert.ok(!html.includes('No audio'));
-  assert.deepEqual([...html.matchAll(/id="video-(\d+)"/g)].map(m => Number(m[1])), [37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,9,6,3,1]);
+  assert.deepEqual([...html.matchAll(/id="video-(\d+)"/g)].map(m => Number(m[1])), [41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,9,6,3,1]);
   assert.ok(!html.includes('Lecture 1'));
 });
 
-test('the already-shared root URL contains only the six Selects, using the original files', async () => {
+test('the already-shared root URL contains only the ten Selects, using the original files', async () => {
   const response = await handler.fetch(req('/'), env);
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.ok(html.includes('<h1>Selects</h1>'));
-  assert.ok(html.includes('6 selected videos. Watch, download, and post.'));
-  assert.deepEqual([...html.matchAll(/id="video-(\d+)"/g)].map(m => Number(m[1])), [25,20,9,6,3,1]);
+  assert.ok(html.includes('10 selected videos. Watch, download, and post.'));
+  assert.deepEqual([...html.matchAll(/id="video-(\d+)"/g)].map(m => Number(m[1])), [41,40,39,38,25,20,9,6,3,1]);
   assert.ok(!html.includes('href="/tests'), 'Share page should not lead recipients to experiments');
   const legacy = await handler.fetch(req('/selects/'), env);
   assert.equal(legacy.status, 200);
-  assert.equal(await legacy.text(), html, 'The earlier Selects link must show the same six picks');
+  assert.equal(await legacy.text(), html, 'The earlier Selects link must show the same ten picks');
   const catalog = JSON.parse(await readFile(new URL('../assets/CATALOG.json', import.meta.url)));
-  const chosen = catalog.filter(r => [1,3,6,9,20,25].includes(r.number));
+  const chosen = catalog.filter(r => [1,3,6,9,20,25,38,39,40,41].includes(r.number));
   const sources = [...html.matchAll(/<source src="([^"]+)"/g)].map(m => m[1]);
-  assert.equal(sources.length, 6);
+  assert.equal(sources.length, 10);
   for (const r of chosen) {
     const route = '/' + r.file;
     assert.ok(sources.includes(route));
@@ -133,4 +133,17 @@ test('all four disco auditions offer their original MP3 and WAV files', async ()
       assert.deepEqual(Buffer.from(await response.arrayBuffer()), original);
     }
   }
+});
+
+test('the four blue digital Selects use the same chosen Disco D soundtrack', async () => {
+  const catalog = JSON.parse(await readFile(new URL('../assets/CATALOG.json', import.meta.url)));
+  const selected = catalog.filter(r => [38,39,40,41].includes(r.number));
+  assert.equal(selected.length, 4);
+  for (const entry of selected) {
+    assert.equal(entry.audio, 'Disco D — Space Disco, 120 BPM');
+    assert.match(entry.audio_sha256, /^[a-f0-9]{64}$/);
+    assert.equal(entry.seconds, 18);
+  }
+  assert.equal(new Set(selected.map(r => r.audio_sha256)).size, 1);
+  assert.equal(new Set(selected.map(r => r.audio_mp3)).size, 1);
 });
