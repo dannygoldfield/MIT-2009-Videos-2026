@@ -2,9 +2,10 @@
 
 [Open the public collection](https://mit-2009-videos-2026.pages.dev/)
 
-Four videos with browser previews and original-quality MP4 downloads. The page
+Six videos with browser previews and original-quality MP4 downloads. The page
 has a light background, simple controls, and links to the separate looping
-slideshows where available. Videos are silent H.264 MP4s at 30 frames per second.
+slideshows where available. The four slideshow videos are silent H.264 MP4s at 30 frames per second.
+The two portrait reel tests are 60 fps with original ticks and a landing chime.
 
 | Original catalog number | Video | Duration |
 | --- | --- | --- |
@@ -12,16 +13,19 @@ slideshows where available. Videos are silent H.264 MP4s at 30 frames per second
 | 03 | Student headshots | 129.6 seconds |
 | 06 | 2025 Finals | 63 seconds |
 | 09 | Theme Reveal & Balloon Challenge | 64.4 seconds |
+| 18 | Yellow Team — Slot reel A (quick spin) | 8 seconds |
+| 19 | Yellow Team — Slot reel B (slow landing) | 11 seconds |
 
 Balloon Bloom uses a 7-second transition and a 0.5-second hold. Student
 headshots use 1.2 seconds per photo. 2025 Finals uses 1 second per photo;
 Theme Reveal uses 1.4 seconds. Items 01 and 03 loop in the preview player.
-Only one preview plays at a time. The original catalog numbering is intentional.
+Both reel tests use one column of Yellow Team portraits, bounce at the stop,
+and settle on photo 15. They do not loop. Only one preview plays at a time. The original catalog numbering is intentional.
 
 ## What is included
 
-- `assets/videos/`: the four original MP4s, with the Finals filename updated.
-- `assets/previews/`: the four poster images.
+- `assets/videos/`: the six original MP4s, with the Finals filename updated.
+- `assets/previews/`: the six poster images.
 - `assets/CATALOG.json`: titles, descriptions, timings, links, and file hashes.
 - `build.py`: creates the website and Cloudflare upload ZIP.
 - `video-handler.mjs`: serves MP4 playback, seeking, and downloads.
@@ -49,13 +53,12 @@ port with `PORT=8793 npm start`.
 1. Change the text or file references in `assets/CATALOG.json`. For a replacement
    video, copy the MP4 into `assets/videos/`, update its details and SHA-256 hash,
    and update its poster in `assets/previews/`.
-2. Run `npm test` to build and check the collection. It checks the four selected
+2. Run `npm test` to build and check the collection. It checks the six selected
    items, complete file hashes, byte-range seeking, and download filenames.
 3. Run `npm start` to review the page. Commit source changes to Git when ready.
 
-The current layout and tests deliberately describe the approved four-video
-selection. If adding videos, update the page's collection count and the selection
-test too. Page layout, styling, and browser controls currently live in `build.py`.
+The collection count comes from the catalog. If adding videos, update the
+selection test too. Page layout, styling, and browser controls currently live in `build.py`.
 
 ## Update the existing Cloudflare site
 

@@ -74,5 +74,43 @@
     "audio": "Silent",
     "fast_start": true,
     "loop": false
+  },
+  {
+    "number": 18,
+    "title": "Yellow Team — Slot reel A",
+    "description": "Yellow Team’s 18 portraits spin in one column, bounce gently, and settle on photo 15. An 8-second motion test.",
+    "file": "videos/MIT-2.009-Yellow-Slot-A-Quick-8s-Portrait-15.mp4",
+    "seconds": 8,
+    "dimensions": "1080 × 1920",
+    "format": "Portrait 9:16",
+    "photo_count": 18,
+    "size_mb": 8.1,
+    "online_url": "",
+    "thumbnail": "previews/18.jpg",
+    "sha256": "d5c4800896a6c3e1c1136787ef8f2de7d11f7f62134310e6f1cb5cabc061765d",
+    "fps": 60,
+    "codec": "H.264",
+    "audio": "Original ticks and landing chime",
+    "fast_start": true,
+    "loop": false
+  },
+  {
+    "number": 19,
+    "title": "Yellow Team — Slot reel B",
+    "description": "The same Yellow Team reel with a longer slowdown and a stronger mechanical bounce, ending on photo 15. An 11-second motion test.",
+    "file": "videos/MIT-2.009-Yellow-Slot-B-Slow-11s-Portrait-15.mp4",
+    "seconds": 11,
+    "dimensions": "1080 × 1920",
+    "format": "Portrait 9:16",
+    "photo_count": 18,
+    "size_mb": 10.0,
+    "online_url": "",
+    "thumbnail": "previews/19.jpg",
+    "sha256": "3ef3bd1431e5e8f1ec3a448da105b1212139c0e606964c52f030a477e2af7c1d",
+    "fps": 60,
+    "codec": "H.264",
+    "audio": "Original ticks and landing chime",
+    "fast_start": true,
+    "loop": false
   }
 ]
