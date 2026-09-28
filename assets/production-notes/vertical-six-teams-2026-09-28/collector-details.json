@@ -1,0 +1,337 @@
+{
+  "variant": "collector",
+  "title": "One reel builds six",
+  "file": "MIT-2.009-Vertical-One-Reel-Builds-Six-Disco-D-15s.mp4",
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "seconds": 15,
+  "audio": "Disco D \u2014 Full Row Hit",
+  "audioSource": "/Users/dannygoldfield/.codex/.chatgpt-projects/g-p-6895face66e4819199cf67f0a9949cb9/outputs/MIT-2.009-Unified-Slot-Disco-D-2026-09-28/MIT-2.009-Disco-D-Full-Row-Hit-120BPM-15s.m4a",
+  "sharedSoundtrack": true,
+  "noVisibleText": true,
+  "photo_count": 30,
+  "one_winner_per_team": true,
+  "targets": [
+    {
+      "number": 15,
+      "team": "Yellow",
+      "filename": "15-26-09-14-Headshots-0174.jpg",
+      "sha256": "ee2c21d4c85f465484712c85b6f104864f59241753b186194620453cfb3065bd"
+    },
+    {
+      "number": 25,
+      "team": "Red",
+      "filename": "25-26-09-14-Headshots-0254.jpg",
+      "sha256": "5343ece70e4a852e8886b3919aa950842b5829860e5cc17c20aa39ecacef5204"
+    },
+    {
+      "number": 43,
+      "team": "Green",
+      "filename": "43-26-09-15-Headshots-0062.jpg",
+      "sha256": "4c4e1f11c85ec8709e68a1b02f0fcc5b2dba35d948869daaab725e29cc138c2a"
+    },
+    {
+      "number": 67,
+      "team": "Pink",
+      "filename": "67-26-09-15-Headshots-0366.jpg",
+      "sha256": "a656e144a467aed92848ccbd00eed0e6d6795709c975c74096746d29e1a0c4b7"
+    },
+    {
+      "number": 89,
+      "team": "Blue",
+      "filename": "89-26-09-15-Headshots-0690.jpg",
+      "sha256": "f221d2a26bdebceb638e64cb26cd21012f33712f87b59d71bf6ef918f8bce151"
+    },
+    {
+      "number": 107,
+      "team": "Purple",
+      "filename": "107-26-09-16-Headshots-0224.jpg",
+      "sha256": "beeb51f17d3dd2ca2aac52e889a1105e49e1a8ffe78b99cd8a8f5a09f0580e33"
+    }
+  ],
+  "photos": [
+    {
+      "number": 38,
+      "team": "Green",
+      "sha256": "0a0dcf30d5be172163d7299edfd7ff2ed201827401fff58b0a45d27c8979c986"
+    },
+    {
+      "number": 23,
+      "team": "Red",
+      "sha256": "03bde51744c06c22f51d93ffcbc1420c060c242159fa24ceb501480dbcbc51d6"
+    },
+    {
+      "number": 49,
+      "team": "Green",
+      "sha256": "8b17c19bfca40bfefb92d3f141db6a126ffb87711835b04603098fb787a6330d"
+    },
+    {
+      "number": 106,
+      "team": "Purple",
+      "sha256": "27bc4244999138ffec331e8dd3998fa60027385936beaa74fc559c9149dee65f"
+    },
+    {
+      "number": 15,
+      "team": "Yellow",
+      "sha256": "ee2c21d4c85f465484712c85b6f104864f59241753b186194620453cfb3065bd"
+    },
+    {
+      "number": 57,
+      "team": "Pink",
+      "sha256": "ce9bc2ddae89430fa5b91c82cb616946591f52b34633100d5b4878d9a981d3c2"
+    },
+    {
+      "number": 90,
+      "team": "Blue",
+      "sha256": "0347e9e95ec25607f1f474a23876cab0081a2299cc068959f291f48402829991"
+    },
+    {
+      "number": 18,
+      "team": "Yellow",
+      "sha256": "c358523c826945d083752701eb8ae2cdfe7a6d8667f9803af3d148b26fa122a6"
+    },
+    {
+      "number": 65,
+      "team": "Pink",
+      "sha256": "da59ceb3cf8603e87f9199357bfb36b54407f1fd9e2aaeb4771279b7e4c4e89a"
+    },
+    {
+      "number": 25,
+      "team": "Red",
+      "sha256": "5343ece70e4a852e8886b3919aa950842b5829860e5cc17c20aa39ecacef5204"
+    },
+    {
+      "number": 86,
+      "team": "Blue",
+      "sha256": "87c5dd1227e1d602c1fb10dc2ccc15bfc1c8539edbe56e93c9ab2ece08f98eb1"
+    },
+    {
+      "number": 16,
+      "team": "Yellow",
+      "sha256": "b112b54c84d840972cf1c2b64fc9ded7888b061e9fc00aff9d6b233edb91add1"
+    },
+    {
+      "number": 21,
+      "team": "Red",
+      "sha256": "0ecb3dfc12b1975e3e0443eb4d2865bb01e6f76861692e9c4b9a0746020512ad"
+    },
+    {
+      "number": 43,
+      "team": "Green",
+      "sha256": "4c4e1f11c85ec8709e68a1b02f0fcc5b2dba35d948869daaab725e29cc138c2a"
+    },
+    {
+      "number": 109,
+      "team": "Blue",
+      "sha256": "08d75e8e0a9335dfad51fa02bf4ba4cc17f12f98572cb032556016e57846e303"
+    },
+    {
+      "number": 13,
+      "team": "Yellow",
+      "sha256": "d83ef9510be097b3ac5265b8664e7bf358a06385b2a4fac4fe8c0acfa47d409b"
+    },
+    {
+      "number": 55,
+      "team": "Green",
+      "sha256": "5e2170f569720d19201d50e3c29e47a29dc283af12dfb048ce0c4583ec083260"
+    },
+    {
+      "number": 88,
+      "team": "Blue",
+      "sha256": "5bc4d05f405a5799df94c8cd2f956d7b14b893ca2f5f923d987d0abd8ae1133e"
+    },
+    {
+      "number": 67,
+      "team": "Pink",
+      "sha256": "a656e144a467aed92848ccbd00eed0e6d6795709c975c74096746d29e1a0c4b7"
+    },
+    {
+      "number": 30,
+      "team": "Red",
+      "sha256": "0a20abc3d1527c60db281e654dcba20e005e79f956a8544af64cd2913047c8f0"
+    },
+    {
+      "number": 94,
+      "team": "Purple",
+      "sha256": "e318371481f5fc701a01102d4c9e88b43a4c90a7410828abb416b374a0d6820b"
+    },
+    {
+      "number": 27,
+      "team": "Red",
+      "sha256": "8f0544295dfe449fc9bb50fd5e0005de7fba647a8c1b153dd0625be1664688f5"
+    },
+    {
+      "number": 89,
+      "team": "Blue",
+      "sha256": "f221d2a26bdebceb638e64cb26cd21012f33712f87b59d71bf6ef918f8bce151"
+    },
+    {
+      "number": 24,
+      "team": "Red",
+      "sha256": "f463cb66e2d1e5c3e4e43bbcc46cafdb3c7ab9f0ea1b1d4313cd9c42bdd998e0"
+    },
+    {
+      "number": 63,
+      "team": "Pink",
+      "sha256": "b9f74a99e49ed0ad8b6110e92916ae187ebeb3cf87ee94851288cd410def2106"
+    },
+    {
+      "number": 78,
+      "team": "Blue",
+      "sha256": "1e0f82d8d0eca9323e27c173c0958bc120b0bec2fca44623f8d604e25c05017a"
+    },
+    {
+      "number": 56,
+      "team": "Pink",
+      "sha256": "9ae91fca7c7dadb8b5b240337eb2bbdfcf7fc359e2896f9fb2b812b82daade21"
+    },
+    {
+      "number": 76,
+      "team": "Blue",
+      "sha256": "6555bc1df4eb84133b527cf0fe367fe691e1241bf8307d8642a9fd6f6a036316"
+    },
+    {
+      "number": 2,
+      "team": "Yellow",
+      "sha256": "f6444397cc88b5b72d63c10812f592f84546cddcdaeed5f73120c4439441d791"
+    },
+    {
+      "number": 107,
+      "team": "Purple",
+      "sha256": "beeb51f17d3dd2ca2aac52e889a1105e49e1a8ffe78b99cd8a8f5a09f0580e33"
+    }
+  ],
+  "complete_grid_at": 10,
+  "celebration_seconds": 5,
+  "source_photos_unchanged": true,
+  "layout": "One reel builds six",
+  "sequences": [
+    {
+      "photos": [
+        38,
+        23,
+        49,
+        106,
+        15
+      ],
+      "motion": {
+        "intro": 0.02,
+        "accel": 0.14,
+        "decel": 0.35,
+        "settle": 0.18,
+        "distance": 4,
+        "landing": 1.05,
+        "overshoot": 0.06,
+        "ripple": 0.05
+      },
+      "start": 0
+    },
+    {
+      "photos": [
+        57,
+        90,
+        18,
+        65,
+        25
+      ],
+      "motion": {
+        "intro": 0.02,
+        "accel": 0.14,
+        "decel": 0.35,
+        "settle": 0.18,
+        "distance": 4,
+        "landing": 1.05,
+        "overshoot": 0.06,
+        "ripple": 0.05
+      },
+      "start": 1.6
+    },
+    {
+      "photos": [
+        86,
+        16,
+        49,
+        21,
+        43
+      ],
+      "motion": {
+        "intro": 0.02,
+        "accel": 0.14,
+        "decel": 0.35,
+        "settle": 0.18,
+        "distance": 4,
+        "landing": 1.05,
+        "overshoot": 0.06,
+        "ripple": 0.05
+      },
+      "start": 3.2
+    },
+    {
+      "photos": [
+        109,
+        13,
+        55,
+        88,
+        67
+      ],
+      "motion": {
+        "intro": 0.02,
+        "accel": 0.14,
+        "decel": 0.35,
+        "settle": 0.18,
+        "distance": 4,
+        "landing": 1.05,
+        "overshoot": 0.06,
+        "ripple": 0.05
+      },
+      "start": 4.800000000000001
+    },
+    {
+      "photos": [
+        30,
+        94,
+        27,
+        49,
+        89
+      ],
+      "motion": {
+        "intro": 0.02,
+        "accel": 0.14,
+        "decel": 0.35,
+        "settle": 0.18,
+        "distance": 4,
+        "landing": 1.05,
+        "overshoot": 0.06,
+        "ripple": 0.05
+      },
+      "start": 6.4
+    },
+    {
+      "photos": [
+        24,
+        63,
+        78,
+        56,
+        76,
+        2,
+        49,
+        107
+      ],
+      "motion": {
+        "intro": 0.02,
+        "accel": 0.14,
+        "decel": 0.78,
+        "settle": 0.28,
+        "distance": 7,
+        "landing": 2,
+        "overshoot": 0.06,
+        "ripple": 0.05
+      },
+      "start": 8
+    }
+  ],
+  "audio_sha256": "65a9bb1e3318a324e1d93954ce2e48a9105a25d898ae67d2865a78a753e2fab3",
+  "verified_identical_audio_across_three_versions": true,
+  "verified_full_decode": true
+}

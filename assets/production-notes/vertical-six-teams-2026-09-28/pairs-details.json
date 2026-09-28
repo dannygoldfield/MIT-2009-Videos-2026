@@ -1,0 +1,463 @@
+{
+  "variant": "pairs",
+  "title": "Two reels, three rounds",
+  "file": "MIT-2.009-Vertical-Two-Reels-Three-Rounds-Disco-D-15s.mp4",
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "seconds": 15,
+  "audio": "Disco D \u2014 Full Row Hit",
+  "audioSource": "/Users/dannygoldfield/.codex/.chatgpt-projects/g-p-6895face66e4819199cf67f0a9949cb9/outputs/MIT-2.009-Unified-Slot-Disco-D-2026-09-28/MIT-2.009-Disco-D-Full-Row-Hit-120BPM-15s.m4a",
+  "sharedSoundtrack": true,
+  "noVisibleText": true,
+  "photo_count": 47,
+  "one_winner_per_team": true,
+  "targets": [
+    {
+      "number": 15,
+      "team": "Yellow",
+      "filename": "15-26-09-14-Headshots-0174.jpg",
+      "sha256": "ee2c21d4c85f465484712c85b6f104864f59241753b186194620453cfb3065bd"
+    },
+    {
+      "number": 25,
+      "team": "Red",
+      "filename": "25-26-09-14-Headshots-0254.jpg",
+      "sha256": "5343ece70e4a852e8886b3919aa950842b5829860e5cc17c20aa39ecacef5204"
+    },
+    {
+      "number": 43,
+      "team": "Green",
+      "filename": "43-26-09-15-Headshots-0062.jpg",
+      "sha256": "4c4e1f11c85ec8709e68a1b02f0fcc5b2dba35d948869daaab725e29cc138c2a"
+    },
+    {
+      "number": 67,
+      "team": "Pink",
+      "filename": "67-26-09-15-Headshots-0366.jpg",
+      "sha256": "a656e144a467aed92848ccbd00eed0e6d6795709c975c74096746d29e1a0c4b7"
+    },
+    {
+      "number": 89,
+      "team": "Blue",
+      "filename": "89-26-09-15-Headshots-0690.jpg",
+      "sha256": "f221d2a26bdebceb638e64cb26cd21012f33712f87b59d71bf6ef918f8bce151"
+    },
+    {
+      "number": 107,
+      "team": "Purple",
+      "filename": "107-26-09-16-Headshots-0224.jpg",
+      "sha256": "beeb51f17d3dd2ca2aac52e889a1105e49e1a8ffe78b99cd8a8f5a09f0580e33"
+    }
+  ],
+  "photos": [
+    {
+      "number": 71,
+      "team": "Pink",
+      "sha256": "fdd5461848e48e01cc4b220b19e1a075df88f047bc63e1ac21c8bbb390356189"
+    },
+    {
+      "number": 21,
+      "team": "Red",
+      "sha256": "0ecb3dfc12b1975e3e0443eb4d2865bb01e6f76861692e9c4b9a0746020512ad"
+    },
+    {
+      "number": 96,
+      "team": "Purple",
+      "sha256": "d3cfb6bce9a54e4a8ee008b81ee79796a8d92232bb78729d657d18769f0c6b51"
+    },
+    {
+      "number": 4,
+      "team": "Yellow",
+      "sha256": "f88ff26091a8cd64f85ced90c14a90ec13405579b4f96079d0e1fd2d7f5fb3db"
+    },
+    {
+      "number": 81,
+      "team": "Blue",
+      "sha256": "d794934e309a332af6977f7db43c70c26b594742fc158cdc86037c2695425dbe"
+    },
+    {
+      "number": 47,
+      "team": "Green",
+      "sha256": "7e25367e869ef31d81e9cb15692a1d295321ae63c5ef14b9ebda583ee0a95bb4"
+    },
+    {
+      "number": 31,
+      "team": "Red",
+      "sha256": "40b8762f0c1230420c12e6a9761a6d4d06e557c062b5ec88c457d9159ebe0880"
+    },
+    {
+      "number": 1,
+      "team": "Yellow",
+      "sha256": "0122d8dda9d17a3299c6ad33a5f40e3ed856a25518e4a4d163791765c0055ed3"
+    },
+    {
+      "number": 15,
+      "team": "Yellow",
+      "sha256": "ee2c21d4c85f465484712c85b6f104864f59241753b186194620453cfb3065bd"
+    },
+    {
+      "number": 33,
+      "team": "Red",
+      "sha256": "d5c84258ca6cdad0546c408b9e0c03c57ba4e2a13ad3af012c64863e09a52e03"
+    },
+    {
+      "number": 106,
+      "team": "Purple",
+      "sha256": "27bc4244999138ffec331e8dd3998fa60027385936beaa74fc559c9149dee65f"
+    },
+    {
+      "number": 65,
+      "team": "Pink",
+      "sha256": "da59ceb3cf8603e87f9199357bfb36b54407f1fd9e2aaeb4771279b7e4c4e89a"
+    },
+    {
+      "number": 78,
+      "team": "Blue",
+      "sha256": "1e0f82d8d0eca9323e27c173c0958bc120b0bec2fca44623f8d604e25c05017a"
+    },
+    {
+      "number": 55,
+      "team": "Green",
+      "sha256": "5e2170f569720d19201d50e3c29e47a29dc283af12dfb048ce0c4583ec083260"
+    },
+    {
+      "number": 43,
+      "team": "Green",
+      "sha256": "4c4e1f11c85ec8709e68a1b02f0fcc5b2dba35d948869daaab725e29cc138c2a"
+    },
+    {
+      "number": 20,
+      "team": "Red",
+      "sha256": "3677dbe33a04f172bf1496f68f55ba671cb6db5ee0280110370fa66722c245aa"
+    },
+    {
+      "number": 2,
+      "team": "Yellow",
+      "sha256": "f6444397cc88b5b72d63c10812f592f84546cddcdaeed5f73120c4439441d791"
+    },
+    {
+      "number": 97,
+      "team": "Purple",
+      "sha256": "cecf26957137c0ab9a74742cc9471a211859cce2fc6b2d6b2f50053acbfd6481"
+    },
+    {
+      "number": 85,
+      "team": "Blue",
+      "sha256": "a7e7eae0cc6960e268c3deb7614060b35e5dcfc1c6d83a377bbfc59d801157d6"
+    },
+    {
+      "number": 101,
+      "team": "Purple",
+      "sha256": "0bebbc62bc5054f19bc2ba81867e9f4cd9ed0b8ef35b4ba3d2b5fe53f955e2e0"
+    },
+    {
+      "number": 7,
+      "team": "Yellow",
+      "sha256": "76be07a7d3a9b397180e08e02b46e0badb115286f5e67c87b412c48a6e8687e4"
+    },
+    {
+      "number": 42,
+      "team": "Green",
+      "sha256": "57cf4207bc660c5c1918e8cf9237a983021f6b4c1c284f125879e339195953fa"
+    },
+    {
+      "number": 14,
+      "team": "Yellow",
+      "sha256": "f3e43521f6cffa27565595ba23e6037e5d089dc69072ba9fd9d2558a9ee18d56"
+    },
+    {
+      "number": 19,
+      "team": "Red",
+      "sha256": "e70ea831ad015389102e2b079f646eee6d92d760c2a4756bb24e3b701f151cb5"
+    },
+    {
+      "number": 89,
+      "team": "Blue",
+      "sha256": "f221d2a26bdebceb638e64cb26cd21012f33712f87b59d71bf6ef918f8bce151"
+    },
+    {
+      "number": 22,
+      "team": "Red",
+      "sha256": "ae9695664045a4ed6838854d521987890da41e3212fc6a6dd7fb21e68c41180a"
+    },
+    {
+      "number": 8,
+      "team": "Yellow",
+      "sha256": "7ce216ef54eb1f7e3b82883373d5f5314bb9de69cce17adde627cb1c0ee1abd3"
+    },
+    {
+      "number": 73,
+      "team": "Pink",
+      "sha256": "6a7c530ee86f30a6f3d5b2d1f5d7b217cbf18e5920264202966fd8e8f806e13a"
+    },
+    {
+      "number": 35,
+      "team": "Red",
+      "sha256": "480191230774cea5d9a9aeded8a3563c99e424d0c1afb3058c01aafd42ff89c8"
+    },
+    {
+      "number": 59,
+      "team": "Pink",
+      "sha256": "7d7967c0c310e40dad4d5631f7d2a364f2149f7fde63b42bdf7660eb26c0fc4e"
+    },
+    {
+      "number": 16,
+      "team": "Yellow",
+      "sha256": "b112b54c84d840972cf1c2b64fc9ded7888b061e9fc00aff9d6b233edb91add1"
+    },
+    {
+      "number": 32,
+      "team": "Red",
+      "sha256": "b46274d49ee461d840968e7c93ab159fd9a2f38c67882840359be1b7f49f0349"
+    },
+    {
+      "number": 25,
+      "team": "Red",
+      "sha256": "5343ece70e4a852e8886b3919aa950842b5829860e5cc17c20aa39ecacef5204"
+    },
+    {
+      "number": 64,
+      "team": "Pink",
+      "sha256": "9f316354f0fa1f57e0134d222538fca79ad2ebd3842e5c57ce98c739b97de797"
+    },
+    {
+      "number": 3,
+      "team": "Yellow",
+      "sha256": "d39c1a4ee44d3dfeb0a61f720354f8dd6487a4e0424b4aef46f5e05aaf22a125"
+    },
+    {
+      "number": 57,
+      "team": "Pink",
+      "sha256": "ce9bc2ddae89430fa5b91c82cb616946591f52b34633100d5b4878d9a981d3c2"
+    },
+    {
+      "number": 79,
+      "team": "Blue",
+      "sha256": "b9d28c7444395da1f64756012cddf74921fa21a74a480a251267075367be9498"
+    },
+    {
+      "number": 51,
+      "team": "Green",
+      "sha256": "0a72570b6f3511171795a549e52a9977e06c57300b3580dec76a1347c52d17c4"
+    },
+    {
+      "number": 67,
+      "team": "Pink",
+      "sha256": "a656e144a467aed92848ccbd00eed0e6d6795709c975c74096746d29e1a0c4b7"
+    },
+    {
+      "number": 37,
+      "team": "Green",
+      "sha256": "945dbdfc83ba4accb746ebc415a3841d4620687a37140db8dbe0b66cf0071387"
+    },
+    {
+      "number": 30,
+      "team": "Red",
+      "sha256": "0a20abc3d1527c60db281e654dcba20e005e79f956a8544af64cd2913047c8f0"
+    },
+    {
+      "number": 94,
+      "team": "Purple",
+      "sha256": "e318371481f5fc701a01102d4c9e88b43a4c90a7410828abb416b374a0d6820b"
+    },
+    {
+      "number": 34,
+      "team": "Red",
+      "sha256": "b3fd430841556cdec9b8aec10d3d0c948358bfe7daf60c77f0936c204d606e5d"
+    },
+    {
+      "number": 61,
+      "team": "Pink",
+      "sha256": "a69c546e71ffd86ce8f0c4ca938887914a02204d0a0b6e2828067723b40b63d1"
+    },
+    {
+      "number": 90,
+      "team": "Blue",
+      "sha256": "0347e9e95ec25607f1f474a23876cab0081a2299cc068959f291f48402829991"
+    },
+    {
+      "number": 45,
+      "team": "Green",
+      "sha256": "a61236aa03b2918adf89a7dfcdb80aad42139a51b2fb9d09681159805faf69ca"
+    },
+    {
+      "number": 107,
+      "team": "Purple",
+      "sha256": "beeb51f17d3dd2ca2aac52e889a1105e49e1a8ffe78b99cd8a8f5a09f0580e33"
+    }
+  ],
+  "complete_grid_at": 10,
+  "celebration_seconds": 5,
+  "source_photos_unchanged": true,
+  "layout": "Two reels, three rounds",
+  "sequences": [
+    {
+      "photos": [
+        71,
+        21,
+        96,
+        4,
+        81,
+        47,
+        31,
+        1,
+        15,
+        33,
+        106,
+        65,
+        1,
+        78,
+        55,
+        4,
+        43,
+        20,
+        2,
+        97,
+        1,
+        85,
+        101,
+        7,
+        42,
+        14,
+        19,
+        89
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "offset": 0,
+          "motion": {
+            "intro": 0.015,
+            "accel": 0.24,
+            "decel": 0.72,
+            "settle": 0.24,
+            "distance": 8,
+            "landing": 2,
+            "overshoot": 0.085,
+            "ripple": 0.1
+          },
+          "target": 15
+        },
+        {
+          "start": 2.63,
+          "end": 5.25,
+          "offset": 8,
+          "motion": {
+            "intro": 0.015,
+            "accel": 0.24,
+            "decel": 0.84,
+            "settle": 0.24,
+            "distance": 8,
+            "landing": 2.62,
+            "overshoot": 0.085,
+            "ripple": 0.1
+          },
+          "target": 43
+        },
+        {
+          "start": 5.98,
+          "end": 9.78,
+          "offset": 16,
+          "motion": {
+            "intro": 0.015,
+            "accel": 0.24,
+            "decel": 0.96,
+            "settle": 0.24,
+            "distance": 11,
+            "landing": 3.799999999999999,
+            "overshoot": 0.085,
+            "ripple": 0.1
+          },
+          "target": 89
+        }
+      ]
+    },
+    {
+      "photos": [
+        22,
+        8,
+        73,
+        35,
+        59,
+        31,
+        16,
+        32,
+        25,
+        64,
+        3,
+        57,
+        79,
+        51,
+        85,
+        55,
+        67,
+        37,
+        30,
+        94,
+        34,
+        61,
+        106,
+        1,
+        90,
+        2,
+        45,
+        107
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 2.35,
+          "offset": 0,
+          "motion": {
+            "intro": 0.015,
+            "accel": 0.3,
+            "decel": 0.72,
+            "settle": 0.29,
+            "distance": 8,
+            "landing": 2.35,
+            "overshoot": 0.085,
+            "ripple": 0.1
+          },
+          "target": 25
+        },
+        {
+          "start": 2.98,
+          "end": 5.6,
+          "offset": 8,
+          "motion": {
+            "intro": 0.015,
+            "accel": 0.3,
+            "decel": 0.84,
+            "settle": 0.29,
+            "distance": 8,
+            "landing": 2.6199999999999997,
+            "overshoot": 0.085,
+            "ripple": 0.1
+          },
+          "target": 67
+        },
+        {
+          "start": 6.26,
+          "end": 10,
+          "offset": 16,
+          "motion": {
+            "intro": 0.015,
+            "accel": 0.3,
+            "decel": 0.96,
+            "settle": 0.29,
+            "distance": 11,
+            "landing": 3.74,
+            "overshoot": 0.085,
+            "ripple": 0.1
+          },
+          "target": 107
+        }
+      ]
+    }
+  ],
+  "audio_sha256": "65a9bb1e3318a324e1d93954ce2e48a9105a25d898ae67d2865a78a753e2fab3",
+  "verified_identical_audio_across_three_versions": true,
+  "verified_full_decode": true
+}
