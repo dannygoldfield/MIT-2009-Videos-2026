@@ -1,6 +1,6 @@
 # MIT 2.009 — All Tests and Selects
 
-- [All Tests](https://mit-2009-videos-2026.pages.dev/tests/): all thirty-one videos, newest first.
+- [All Tests](https://mit-2009-videos-2026.pages.dev/tests/): all thirty-four videos, newest first.
 - [Selects](https://mit-2009-videos-2026.pages.dev/): items 1, 3, 6, 9, 20, 25, 38, 39, 40, and 41, newest first. This is the link to share with people who may post the videos.
 
 Selects shows only the chosen videos and has no navigation back to All Tests.
@@ -11,7 +11,7 @@ on Selects and does not redirect to a test. Both pages use the same original MP4
 posters, and catalog numbers. Video download URLs remain unchanged. To change the picks, edit `assets/SELECTS.json`,
 rebuild, and upload the site again.
 
-Thirty-one videos with browser previews and original-quality MP4 downloads. The page
+Thirty-four videos with browser previews and original-quality MP4 downloads. The page
 has a light background, simple controls, and links to the separate looping
 slideshows where available. The four slideshow videos are silent H.264 MP4s at 30 frames per second.
 The two original portrait reel tests are 60 fps with original ticks and a landing chime.
@@ -50,6 +50,9 @@ Fourteen newer mixed-team reel tests are 18 seconds at 60 fps and silent.
 | 42 | Six teams — Together · Disco D | 18 seconds |
 | 43 | Six teams — Color Cascade · Disco D | 18 seconds |
 | 44 | Six teams — Center Out · Disco D | 18 seconds |
+| 45 | One machine — Circuit Surge · Disco D | 15 seconds |
+| 46 | One machine — Prism Wave · Disco D | 15 seconds |
+| 47 | One machine — Disco Supernova · Disco D | 15 seconds |
 
 Balloon Bloom uses a 7-second transition and a 0.5-second hold. Student
 headshots use 1.2 seconds per photo. 2025 Finals uses 1 second per photo;
@@ -59,8 +62,8 @@ and settle on photo 15. The mixed-team tests sample 54 portraits (nine per team)
 
 ## What is included
 
-- `assets/videos/`: the thirty-one original MP4s, with the Finals filename updated.
-- `assets/previews/`: the thirty-one poster images.
+- `assets/videos/`: the thirty-four original MP4s, with the Finals filename updated.
+- `assets/previews/`: the thirty-four poster images.
 - `assets/CATALOG.json`: titles, descriptions, timings, links, and file hashes.
 - `assets/audio/`: standalone MP3 and 24-bit WAV disco-beat exports.
 - `assets/SELECTS.json`: catalog numbers to show on the share page.
@@ -90,7 +93,7 @@ port with `PORT=8793 npm start`.
 1. Change the text or file references in `assets/CATALOG.json`. For a replacement
    video, copy the MP4 into `assets/videos/`, update its details and SHA-256 hash,
    and update its poster in `assets/previews/`.
-2. Run `npm test` to build and check the collection. It checks all thirty-one
+2. Run `npm test` to build and check the collection. It checks all thirty-four
    items, Selects membership, complete file hashes, byte-range seeking, and download filenames.
 3. Run `npm start` to review the page. Commit source changes to Git when ready.
 
@@ -137,3 +140,11 @@ Each includes all 108 approved portraits, lands on one expressive portrait per t
 and uses identical Disco D music. Spectrum and Mirrorball join the four earlier
 digital styles. All winners are settled by 12 seconds. These are in All Tests only;
 Selects is unchanged.
+
+## Unified cabinet tests
+
+Items 45–47 integrate all six reels into one continuous slot machine. Circuit Surge,
+Prism Wave and Disco Supernova are each 15 seconds, with all six winners landing
+at ten seconds on the same new Disco D musical hit. Five seconds of coordinated
+lights celebrate the full row. These are in All Tests only. Earlier videos and
+the ten Selects are preserved.
