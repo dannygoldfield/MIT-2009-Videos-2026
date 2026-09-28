@@ -17,4 +17,4 @@ Selects is the share page at https://mit-2009-videos-2026.pages.dev/. The earlie
 
 - Items 42–44 are six-reel widescreen lecture tests, with identical Disco D audio and winners Yellow 15, Red 25, Green 43, Pink 67, Blue 89, Purple 107. They remain in All Tests until selected. Preserve all 108 approved students across each six-reel video.
 
-- Items 45–47 are 15-second unified cabinet tests: Circuit Surge, Prism Wave, Disco Supernova. Same 108 portraits and six winners as 42–44. All settle together at ten seconds on the shared Disco D Full Row Hit arrangement, with a large five-second light show. All Tests only.
+- Items 45–47 revision 2 are Slow Bloom, Color Sweep and Color Rush: independent reels, no text, three one-color-at-a-time patterns and six-color winning bursts. Stops are Yellow 7.5s, Green 8s, Purple 8.5s, Red 9s, Pink 9.5s, Blue 10s; the last stop triggers the shared Disco D hit. Each is 15s, with the same 108 photos and six winners as 42–44. All Tests only. Preserve MP4 paths and use digest query strings for revised preview/download URLs.

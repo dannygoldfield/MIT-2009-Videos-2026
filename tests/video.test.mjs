@@ -147,3 +147,22 @@ test('the four blue digital Selects use the same chosen Disco D soundtrack', asy
   assert.equal(new Set(selected.map(r => r.audio_sha256)).size, 1);
   assert.equal(new Set(selected.map(r => r.audio_mp3)).size, 1);
 });
+
+
+test('revised independent reels bypass cached previews and downloads while keeping their MP4 paths', async () => {
+  const catalog = JSON.parse(await readFile(new URL('../assets/CATALOG.json', import.meta.url)));
+  const html = await (await handler.fetch(req('/tests/'), env)).text();
+  const revisions = catalog.filter(r => [45,46,47].includes(r.number));
+  assert.equal(revisions.length, 3);
+  for (const r of revisions) {
+    assert.equal(r.revision, 2);
+    const version = r.sha256.slice(0,12);
+    assert.ok(html.includes(`src="/${r.file}?v=${version}"`));
+    assert.ok(html.includes(`href="/${r.file}?download=1&amp;v=${version}"`));
+    assert.ok(html.includes(`poster="/${r.thumbnail}?v=${version}"`));
+    const response = await handler.fetch(req('/'+r.file+'?download=1&v='+version, {method:'HEAD'}), env);
+    assert.equal(response.status, 200);
+    assert.equal(response.headers.get('ETag'), `"${r.sha256}"`);
+    assert.ok(response.headers.get('Content-Disposition').startsWith('attachment;'));
+  }
+});

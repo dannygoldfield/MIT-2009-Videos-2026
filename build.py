@@ -51,12 +51,16 @@ for r in records:
             shutil.copyfile(SOURCE/audio_path, SITE/audio_path)
             audio_links.append(f'<a href="/{html.escape(audio_path, quote=True)}" download>{label}</a>')
     audio_downloads = '<p class="audio-downloads">Beat only: ' + ' · '.join(audio_links) + '</p>' if audio_links else ''
+    revision_query = '?v=' + r['sha256'][:12] if r.get('revision') else ''
+    playback_path = path + revision_query
+    download_path = path + '?download=1' + ('&v=' + r['sha256'][:12] if revision_query else '')
+    poster_path = '/' + r['thumbnail'] + revision_query
     cards[number] = f'''<article class="{card_class}" id="video-{number}">
-      <div class="screen"><video id="player-{number}" controls playsinline preload="none" poster="/{r['thumbnail']}" aria-label="{html.escape(titles[number], quote=True)}"{video_loop}><source src="{path}" type="video/mp4">Your browser does not support video. Use Download MP4 below.</video></div>
+      <div class="screen"><video id="player-{number}" controls playsinline preload="none" poster="{poster_path}" aria-label="{html.escape(titles[number], quote=True)}"{video_loop}><source src="{playback_path}" type="video/mp4">Your browser does not support video. Use Download MP4 below.</video></div>
       <div class="details"><div class="eyebrow">{number:02d} <span>· {html.escape(r['format'])}</span></div>
       <h2>{html.escape(titles[number])}</h2><p class="description">{descriptions[number]}</p>
       <p class="specs">{duration} <span>·</span> {r['dimensions']} <span>·</span> {r['size_mb']} MB <span>·</span> {audio_label}</p>
-      <div class="actions"><a class="download" href="{path}?download=1" download="{filename}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg>Download MP4</a><button class="play" data-player="player-{number}" aria-label="Play {html.escape(titles[number], quote=True)}">Play video <span aria-hidden="true">▷</span></button></div>
+      <div class="actions"><a class="download" href="{html.escape(download_path, quote=True)}" download="{filename}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg>Download MP4</a><button class="play" data-player="player-{number}" aria-label="Play {html.escape(titles[number], quote=True)}">Play video <span aria-hidden="true">▷</span></button></div>
       {audio_downloads}{online}<p class="error" hidden>Unable to load this video. Please reload the page and try again.</p></div></article>'''
     verification.append({'number': number, 'title': titles[number], 'filename': filename, 'bytes': total, 'sha256': digest.hexdigest(), 'parts': len(parts)})
 

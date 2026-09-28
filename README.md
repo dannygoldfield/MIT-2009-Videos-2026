@@ -50,9 +50,9 @@ Fourteen newer mixed-team reel tests are 18 seconds at 60 fps and silent.
 | 42 | Six teams — Together · Disco D | 18 seconds |
 | 43 | Six teams — Color Cascade · Disco D | 18 seconds |
 | 44 | Six teams — Center Out · Disco D | 18 seconds |
-| 45 | One machine — Circuit Surge · Disco D | 15 seconds |
-| 46 | One machine — Prism Wave · Disco D | 15 seconds |
-| 47 | One machine — Disco Supernova · Disco D | 15 seconds |
+| 45 | One machine — Slow Bloom · Disco D | 15 seconds |
+| 46 | One machine — Color Sweep · Disco D | 15 seconds |
+| 47 | One machine — Color Rush · Disco D | 15 seconds |
 
 Balloon Bloom uses a 7-second transition and a 0.5-second hold. Student
 headshots use 1.2 seconds per photo. 2025 Finals uses 1 second per photo;
@@ -143,8 +143,11 @@ Selects is unchanged.
 
 ## Unified cabinet tests
 
-Items 45–47 integrate all six reels into one continuous slot machine. Circuit Surge,
-Prism Wave and Disco Supernova are each 15 seconds, with all six winners landing
-at ten seconds on the same new Disco D musical hit. Five seconds of coordinated
-lights celebrate the full row. These are in All Tests only. Earlier videos and
-the ten Selects are preserved.
+Items 45–47 are revised as Slow Bloom, Color Sweep and Color Rush. These compare
+three single-color cycling patterns and six-color winning bursts. No text appears
+on the machine. Six reels use independent starts, speeds and stopping times:
+Yellow 7.5s, Green 8s, Purple 8.5s, Red 9s, Pink 9.5s, Blue 10s. The last reel
+completes one winner per team color on the Disco D hit. All are 15 seconds with
+five seconds of a large light show. The same catalog numbers and MP4 paths are
+preserved. Revision-specific query strings bypass older browser-cached copies.
+These remain in All Tests; the ten Selects are unchanged.
