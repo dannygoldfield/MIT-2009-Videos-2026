@@ -1,9 +1,9 @@
 # MIT 2.009 Videos 2026
 
-All Tests is the thirty-seven-video collection at https://mit-2009-videos-2026.pages.dev/tests/.
+All Tests is the forty-video collection at https://mit-2009-videos-2026.pages.dev/tests/.
 Selects is the share page at https://mit-2009-videos-2026.pages.dev/. The earlier /selects/ URL shows the same picks.
 
-- Preserve the catalog items 1, 3, 6, 9, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, and 50 unless requested otherwise.
+- Preserve the catalog items 1, 3, 6, 9, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, and 53 unless requested otherwise.
 - Use the names All Tests and Selects. Selects currently contains 1, 3, 6, 9, 20, 25, 38, 39, 40, and 41; change assets/SELECTS.json only when Danny changes his picks.
 - Both pages show newest first. Keep existing catalog numbers and MP4 URLs. The root URL must show only Selects; all experiments belong at /tests/. Selects must not link back to experiments.
 - Danny chose Disco D (Space Disco) for all four digital graphics, with the pink background glow changed to blue and slowly changing accents that settle on blue at the 12-second landing. Updated items 38–41 are in Selects. Keep their music identical in timing and volume; preserve earlier versions 30–37 in All Tests.
@@ -20,3 +20,5 @@ Selects is the share page at https://mit-2009-videos-2026.pages.dev/. The earlie
 - Items 45–47 revision 2 are Slow Bloom, Color Sweep and Color Rush: independent reels, no text, three one-color-at-a-time patterns and six-color winning bursts. Stops are Yellow 7.5s, Green 8s, Purple 8.5s, Red 9s, Pink 9.5s, Blue 10s; the last stop triggers the shared Disco D hit. Each is 15s, with the same 108 photos and six winners as 42–44. All Tests only. Preserve MP4 paths and use digest query strings for revised preview/download URLs.
 
 - Items 48–50 are vertical 1080 × 1920, 15-second examples: six-window machine, one reel builds six, two reels/three rounds. Same six winners and exact Disco D Full Row Hit audio. Complete six-person grid at 10 seconds, five-second celebration. Photo counts 108, 30 and 47 respectively. All Tests only.
+
+- Items 51–53 are graphic variations of 48: Neon Arcade, Color Ribbons, Pixel Jackpot. Distinct whole-cabinet graphics, colored gutters during spin, six-color winning effects. Original 48 remains unchanged. Same 108 photos, reel motions, six winners, 15-second timing and exact Disco D Full Row Hit audio as 48. All Tests only.
