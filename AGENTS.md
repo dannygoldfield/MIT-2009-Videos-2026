@@ -13,6 +13,9 @@ Selects is the share page at https://mit-2009-videos-2026.pages.dev/. The earlie
 - site/, dist/, and video-manifest.json are generated; use python3 build.py.
 - Run npm test when changing video delivery or the build process.
 - The Cloudflare site uses dashboard Direct Upload, not automatic GitHub deployment.
+- The canonical GitHub organization is now mit2009. Vercel uses npm run build:vercel and vercel-site/; this output is generated and ignored.
+- The focused headshot generator is in generator/ and is published at /generator/. It reuses the individual portrait reel effects from 38–41 and copies the exact Disco D AAC packets into all outputs. Preserve the shared audio and the 12-second landing. Input photos stay in the browser; do not add student originals or generated drafts to Git automatically.
+- Generated headshot videos remain drafts. Only Danny's explicit picks change Selects or add items to the catalog.
 - Keep secrets and credentials out of Git. Do not change unrelated Test Studio or HPR projects.
 
 - Items 42–44 are six-reel widescreen lecture tests, with identical Disco D audio and winners Yellow 15, Red 25, Green 43, Pink 67, Blue 89, Purple 107. They remain in All Tests until selected. Preserve all 108 approved students across each six-reel video.

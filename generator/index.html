@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex"><meta name="theme-color" content="#f5f4ef">
+  <title>Headshot videos · MIT 2.009</title>
+  <link rel="stylesheet" href="./style.css"><script type="module" src="./app.js"></script>
+</head>
+<body>
+<main>
+  <nav aria-label="Collections"><a class="brand" href="/">MIT 2.009 <span class="dots" aria-hidden="true">● ● ●</span></a><div><a href="/tests/">All Tests ↗</a><a href="/selects/">Selects ↗</a></div></nav>
+  <header><p class="eyebrow">HEADSHOT VIDEO STUDIO</p><h1>One student.<br>Three possibilities.</h1><p class="lede">Start with our slot-machine looks. Refine the effects, keep the music, and make three vertical videos for every student.</p></header>
+  <noscript>This generator needs JavaScript enabled. The catalogs remain available using the links above.</noscript>
+  <section class="setup" aria-label="Headshot and soundtrack settings">
+    <div class="step"><span class="step-number">01</span><h2>Choose your headshots</h2><p>Choose one to try, or a set to roll through. The selected student lands at 12 seconds.</p><label class="button primary file-button">Choose photos<input id="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple></label><p id="photo-count" class="small">JPG, PNG or WebP · Up to 120 photos</p><label class="field" for="student">Student to feature<select id="student" disabled><option>Add headshots to begin</option></select></label></div>
+    <div class="step"><span class="step-number">02</span><h2>Keep the same music</h2><p>Disco D · Space Disco. The original soundtrack is copied into every MP4, with the same timing and volume.</p><audio id="music" controls preload="metadata" src="./audio/disco-d.m4a"></audio><label class="field" for="team">Light color at landing<select id="team"><option>Blue</option><option>Yellow</option><option>Red</option><option>Green</option><option>Pink</option><option>Purple</option></select></label></div>
+  </section>
+  <section class="looks" aria-labelledby="looks-title"><div class="section-heading"><div><p class="eyebrow">03 · COMPARE & REFINE</p><h2 id="looks-title">Choose your three looks</h2><p>These start from tests 38, 39 and 41. Each look can use any of the four original effects.</p></div><button id="preview" disabled>Play all three with music</button></div>
+    <div id="cards" class="cards"></div>
+    <div class="timeline"><label for="time">Preview position</label><input id="time" type="range" min="0" max="18" step="0.05" value="15" disabled><output id="clock" for="time">15.0 / 18s</output></div>
+  </section>
+  <section class="export-panel" aria-labelledby="export-title"><div><p class="eyebrow">04 · MAKE YOUR VIDEOS</p><h2 id="export-title">Ready to compare the MP4s?</h2><p>18 seconds · 1080 × 1920 · 60 fps · Identical Disco D audio</p><p class="small">Your photos stay in this browser. Download your videos before closing the page. Keep this tab open while exporting.</p></div><div class="export-actions"><button id="generate" class="primary" disabled>Make three MP4s</button><button id="batch" disabled>Export everyone to a folder</button><button id="cancel" hidden>Cancel export</button></div><progress id="progress" max="1" value="0" hidden></progress><p id="status" role="status" aria-live="polite">Choose a headshot to begin.</p><p id="compatibility" class="small"></p><p id="error" role="alert" hidden></p></section>
+  <section id="results" aria-label="Generated videos"></section>
+  <footer>MIT 2.009 · Product Engineering Processes <span>Headshot generator · First browser edition</span></footer>
+</main>
+</body></html>

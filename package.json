@@ -9,7 +9,14 @@
   },
   "scripts": {
     "build": "python3 build.py",
-    "test": "python3 build.py && node --test tests/*.test.mjs",
+    "build:vercel": "python3 build.py --target vercel && node scripts/build-generator.mjs",
+    "test": "python3 build.py && npm run build:vercel && node --test tests/*.test.mjs",
     "start": "python3 build.py && node preview.mjs"
+  },
+  "dependencies": {
+    "mediabunny": "1.61.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
   }
 }

@@ -1,9 +1,12 @@
-import hashlib, html, json, shutil, zipfile
+import argparse, hashlib, html, json, shutil, zipfile
 from pathlib import Path
 
+parser = argparse.ArgumentParser(description='Build the MIT 2.009 video library.')
+parser.add_argument('--target', choices=['cloudflare', 'vercel'], default='cloudflare')
+target = parser.parse_args().target
 WORK = Path(__file__).resolve().parent
 SOURCE = WORK / 'assets'
-SITE = WORK / 'site'
+SITE = WORK / ('vercel-site' if target == 'vercel' else 'site')
 OUT = WORK / 'dist'
 PART_SIZE = 16 * 1024 * 1024
 records = json.loads((SOURCE/'CATALOG.json').read_text())
@@ -16,7 +19,7 @@ assert set(selects) <= {r['number'] for r in records}, 'Unknown catalog number i
 if SITE.exists():
     shutil.rmtree(SITE)
 videos, cards, verification = {}, {}, []
-(SITE/'media').mkdir(parents=True, exist_ok=True)
+(SITE/('videos' if target == 'vercel' else 'media')).mkdir(parents=True, exist_ok=True)
 (SITE/'previews').mkdir(exist_ok=True)
 OUT.mkdir(parents=True, exist_ok=True)
 titles = {r['number']: r['title'] for r in records}
@@ -28,12 +31,15 @@ for r in records:
     parts, digest, total = [], hashlib.sha256(), 0
     with original.open('rb') as f:
         while chunk := f.read(PART_SIZE):
-            path = f'media/{number:02d}-{r["sha256"][:12]}-{len(parts):02d}.bin'
-            (SITE/path).write_bytes(chunk)
-            parts.append({'path': '/'+path, 'size': len(chunk)})
+            if target == 'cloudflare':
+                path = f'media/{number:02d}-{r["sha256"][:12]}-{len(parts):02d}.bin'
+                (SITE/path).write_bytes(chunk)
+                parts.append({'path': '/'+path, 'size': len(chunk)})
             digest.update(chunk)
             total += len(chunk)
     assert digest.hexdigest() == r['sha256'], f'File changed: {original}'
+    if target == 'vercel':
+        shutil.copyfile(original, SITE/'videos'/filename)
     path = '/videos/' + filename
     videos[path] = {'filename': filename, 'size': total, 'sha256': r['sha256'], 'parts': parts}
     shutil.copyfile(SOURCE/r['thumbnail'], SITE/r['thumbnail'])
@@ -64,10 +70,11 @@ for r in records:
       {audio_downloads}{online}<p class="error" hidden>Unable to load this video. Please reload the page and try again.</p></div></article>'''
     verification.append({'number': number, 'title': titles[number], 'filename': filename, 'bytes': total, 'sha256': digest.hexdigest(), 'parts': len(parts)})
 
-handler = (WORK/'video-handler.mjs').read_text()
-(SITE/'_worker.js').write_text(handler + '\nconst videos = ' + json.dumps(videos) + ';\nexport default createVideoHandler(videos);\n')
-(SITE/'_routes.json').write_text(json.dumps({'version': 1, 'include': ['/videos/*'], 'exclude': []}))
-(SITE/'_headers').write_text('/*\n  X-Robots-Tag: noindex\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n/media/*\n  Cache-Control: public, max-age=31536000, immutable\n')
+if target == 'cloudflare':
+    handler = (WORK/'video-handler.mjs').read_text()
+    (SITE/'_worker.js').write_text(handler + '\nconst videos = ' + json.dumps(videos) + ';\nexport default createVideoHandler(videos);\n')
+    (SITE/'_routes.json').write_text(json.dumps({'version': 1, 'include': ['/videos/*'], 'exclude': []}))
+    (SITE/'_headers').write_text('/*\n  X-Robots-Tag: noindex\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n/media/*\n  Cache-Control: public, max-age=31536000, immutable\n')
 (SITE/'robots.txt').write_text('User-agent: *\nDisallow: /\n')
 def collection_page(title, intro, numbers, navigation=''):
     return '''<!doctype html>
@@ -112,12 +119,17 @@ for (const button of document.querySelectorAll('[data-player]')) {
   player.addEventListener('error', () => { error.hidden = false; });
 }
 ''')
-(WORK/'video-manifest.json').write_text(json.dumps(videos, indent=2))
-(OUT/'VERIFICATION.json').write_text(json.dumps(verification, indent=2))
-zip_path = OUT/'MIT-2.009-Selected-Videos-Cloudflare.zip'
-with zipfile.ZipFile(zip_path, 'w', compression=zipfile.ZIP_STORED) as z:
-    for f in sorted(SITE.rglob('*')):
-        if f.is_file():
-            assert f.stat().st_size < 25 * 1024 * 1024
-            z.write(f, str(f.relative_to(SITE)))
-print(json.dumps({'zip': str(zip_path), 'bytes': zip_path.stat().st_size, 'videos': verification}, indent=2))
+if target == 'cloudflare':
+    (WORK/'video-manifest.json').write_text(json.dumps(videos, indent=2))
+    (OUT/'VERIFICATION.json').write_text(json.dumps(verification, indent=2))
+    zip_path = OUT/'MIT-2.009-Selected-Videos-Cloudflare.zip'
+    with zipfile.ZipFile(zip_path, 'w', compression=zipfile.ZIP_STORED) as z:
+        for f in sorted(SITE.rglob('*')):
+            if f.is_file():
+                assert f.stat().st_size < 25 * 1024 * 1024
+                z.write(f, str(f.relative_to(SITE)))
+    print(json.dumps({'zip': str(zip_path), 'bytes': zip_path.stat().st_size, 'videos': verification}, indent=2))
+else:
+    (OUT/'VERCEL-VERIFICATION.json').write_text(json.dumps(verification, indent=2))
+    print(json.dumps({'target': target, 'directory': str(SITE), 'videos': len(verification),
+        'bytes': sum(p.stat().st_size for p in SITE.rglob('*') if p.is_file())}, indent=2))

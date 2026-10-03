@@ -1,5 +1,47 @@
 # MIT 2.009 — All Tests and Selects
 
+## Vercel and the focused headshot generator
+
+The canonical repository is now `mit2009/MIT-2009-Videos-2026`. Import this
+repository into the **mit-2009** Vercel team. Its `vercel.json` installs the pinned
+dependencies, runs `npm run build:vercel`, and serves `vercel-site/`.
+
+One deployment provides three links under its assigned Vercel address:
+
+- `/tests/`: all forty prototypes, including the latest vertical examples 48–53.
+- `/selects/` (and `/`): the existing ten Selects, with original MP4 downloads.
+- `/generator/`: a focused headshot generator, using the single-reel effects
+  from tests 38–41 and the original 18-second Disco D soundtrack.
+
+In the generator, load JPG/PNG/WebP headshots, choose the student who should
+land in the middle, choose the light color, and adjust three effect recipes.
+Preview together, make three 1080 × 1920 / 60 fps MP4s, and download them.
+Batch export creates a new timestamped folder and saves three videos plus a
+settings file per student. Batch folder export requires browser support for
+`showDirectoryPicker`; ordinary MP4 export requires H.264 WebCodecs encoding.
+Runtime capability checks explain unsupported browsers before rendering.
+
+Images are fitted in full, without cropping. The original reel timing,
+temporal motion blur and lighting designs are reused. With multiple input photos, each reel
+uses up to 53 other portraits (repeating when needed) followed by its selected
+student. A single input photo repeats itself during the roll. Light color is
+an explicit setting, not an inferred student team. Generated files are drafts;
+the generator does not change catalog membership or Selects.
+
+Photos and new videos are processed in the browser, with no uploads, backend,
+database or generation service. The 18-second AAC music packets are copied
+unchanged from the existing selected Disco D track into every export. Photos
+and on-page downloads are held in memory; download finished videos before
+closing the page. Batch outputs already saved to disk survive cancellation.
+This focused generator is separate from the broader local Social Studio.
+
+`npm test` checks both catalog builds, all original MP4 hashes, selection and
+link preservation, every possible headshot landing, and exact audio packet
+and timing preservation across three muxed outputs. Browser UI and hardware
+MP4 export still require a live browser check before a full production run.
+
+The Cloudflare addresses and instructions below are retained as migration history.
+
 - [All Tests](https://mit-2009-videos-2026.pages.dev/tests/): all forty videos, newest first.
 - [Selects](https://mit-2009-videos-2026.pages.dev/): items 1, 3, 6, 9, 20, 25, 38, 39, 40, and 41, newest first. This is the link to share with people who may post the videos.
 
@@ -84,8 +126,11 @@ The source MP4s are tracked once; generated copies and ZIPs are excluded from Gi
 
 ## Preview on this Mac
 
-Node.js 22 or later and Python 3.10 or later are required. There are no external
-packages to install.
+Node.js 22 or later and Python 3.10 or later are required. The original Cloudflare
+preview needs no external packages. Run `npm ci` for the Vercel build, generator,
+and full test suite. To preview all three Vercel pages locally, run
+`npm run build:vercel`, then `python3 -m http.server 8808 --bind 127.0.0.1 --directory vercel-site`,
+and open `http://127.0.0.1:8808/generator/` or `/tests/` or `/selects/`.
 
 1. Open a terminal in this project folder.
 2. Run `npm start`.

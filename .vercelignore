@@ -1,17 +1,13 @@
-# Generated output (recreate with npm run build)
+.git/
+.vercel/
 site/
 vercel-site/
-.vercel/
 dist/
 video-manifest.json
 node_modules/
 __pycache__/
 *.pyc
-.DS_Store
 *.log
-.env
-.env.*
-!.env.example
+.env*
 .wrangler/
-
 .generator-review/
