@@ -1,0 +1,50 @@
+[
+  {
+    "number": 54,
+    "seconds": 15,
+    "frames": 900,
+    "landing_seconds": 12,
+    "celebration_seconds": 3,
+    "same_54_original_photos": true,
+    "full_decode_pass": true,
+    "fast_start": true,
+    "audio_sha256": "ed94d632fbd4aa6ccc8be3581c9c4fdb1ad396eb2450681075ff028f28ebb57f",
+    "video_sha256": "1ec31f2c3125904f8c01322d7e5ee4faa53fa06cf28f36f39587bafe9f03f100",
+    "audio_source_start": 0,
+    "audio_source_end": 15,
+    "original_tempo_and_gain": true,
+    "identical_three_second_music_finish": true
+  },
+  {
+    "number": 55,
+    "seconds": 13,
+    "frames": 780,
+    "landing_seconds": 10,
+    "celebration_seconds": 3,
+    "same_54_original_photos": true,
+    "full_decode_pass": true,
+    "fast_start": true,
+    "audio_sha256": "0162de9e354a593a272ee94b7e15d5006568983848b0e7065afffc7cd2552a10",
+    "video_sha256": "6192a460593a769722d471dd2f33137efb1b6a1dfd664cd8b6b882952ce62e47",
+    "audio_source_start": 2,
+    "audio_source_end": 15,
+    "original_tempo_and_gain": true,
+    "identical_three_second_music_finish": true
+  },
+  {
+    "number": 56,
+    "seconds": 11,
+    "frames": 660,
+    "landing_seconds": 8,
+    "celebration_seconds": 3,
+    "same_54_original_photos": true,
+    "full_decode_pass": true,
+    "fast_start": true,
+    "audio_sha256": "e58009c0d2e55d3c53d26e4ce232fbbc296bb004fb611d3cbeba348b0e995ab9",
+    "video_sha256": "e4133595007e54e25290a86f45f8e2f2c534f27c18a241cec065531687947693",
+    "audio_source_start": 4,
+    "audio_source_end": 15,
+    "original_tempo_and_gain": true,
+    "identical_three_second_music_finish": true
+  }
+]

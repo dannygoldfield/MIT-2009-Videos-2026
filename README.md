@@ -6,9 +6,9 @@ The canonical repository is now `mit2009/MIT-2009-Videos-2026`. Import this
 repository into the **mit-2009** Vercel team. Its `vercel.json` installs the pinned
 dependencies, runs `npm run build:vercel`, and serves `vercel-site/`.
 
-One deployment provides three links under its assigned Vercel address:
+The live Vercel address is https://26-mit-2009-videos.vercel.app/. It provides:
 
-- `/tests/`: all forty prototypes, including the latest vertical examples 48–53.
+- `/tests/`: all forty-three prototypes, including the Pixel + Prism duration tests 54–56.
 - `/selects/` (and `/`): the existing ten Selects, with original MP4 downloads.
 - `/generator/`: a focused headshot generator, using the single-reel effects
   from tests 38–41 and the original 18-second Disco D soundtrack.
@@ -53,7 +53,7 @@ on Selects and does not redirect to a test. Both pages use the same original MP4
 posters, and catalog numbers. Video download URLs remain unchanged. To change the picks, edit `assets/SELECTS.json`,
 rebuild, and upload the site again.
 
-Forty videos with browser previews and original-quality MP4 downloads. The page
+Forty-three videos with browser previews and original-quality MP4 downloads. The page
 has a light background, simple controls, and links to the separate looping
 slideshows where available. The four slideshow videos are silent H.264 MP4s at 30 frames per second.
 The two original portrait reel tests are 60 fps with original ticks and a landing chime.
@@ -101,6 +101,19 @@ Fourteen newer mixed-team reel tests are 18 seconds at 60 fps and silent.
 | 51 | Vertical — Neon Arcade · Disco D | 15 seconds |
 | 52 | Vertical — Color Ribbons · Disco D | 15 seconds |
 | 53 | Vertical — Pixel Jackpot · Disco D | 15 seconds |
+| 54 | Pixel + Prism — 15-second test | 15 seconds |
+| 55 | Pixel + Prism — 13-second test | 13 seconds |
+| 56 | Pixel + Prism — 11-second test | 11 seconds |
+
+Items 54–56 are Danny's requested duration comparison: Pixel Party's colored
+perimeter squares with Prism Jackpot's outward rays. The same 54-photo sequence
+lands on Blue portrait 88 at 12, 10, or 8 seconds, followed by a three-second
+celebration. The motion is retimed proportionally; photos and neighboring
+portraits are preserved. Disco D keeps its original tempo, pitch, and gain:
+the edits start at source seconds 0, 2, and 4 and all end at source second 15,
+with short edge fades. The three-second winning phrase is identical in all
+three. These are All Tests drafts; Selects and the generator remain unchanged
+while Danny chooses the pacing. Production notes record the verification.
 
 Balloon Bloom uses a 7-second transition and a 0.5-second hold. Student
 headshots use 1.2 seconds per photo. 2025 Finals uses 1 second per photo;
@@ -110,8 +123,8 @@ and settle on photo 15. The mixed-team tests sample 54 portraits (nine per team)
 
 ## What is included
 
-- `assets/videos/`: the forty original MP4s, with the Finals filename updated.
-- `assets/previews/`: the forty poster images.
+- `assets/videos/`: the forty-three original MP4s, with the Finals filename updated.
+- `assets/previews/`: the forty-three poster images.
 - `assets/CATALOG.json`: titles, descriptions, timings, links, and file hashes.
 - `assets/audio/`: standalone MP3 and 24-bit WAV disco-beat exports.
 - `assets/SELECTS.json`: catalog numbers to show on the share page.
@@ -144,7 +157,7 @@ port with `PORT=8793 npm start`.
 1. Change the text or file references in `assets/CATALOG.json`. For a replacement
    video, copy the MP4 into `assets/videos/`, update its details and SHA-256 hash,
    and update its poster in `assets/previews/`.
-2. Run `npm test` to build and check the collection. It checks all forty
+2. Run `npm test` to build and check the collection. It checks all forty-three
    items, Selects membership, complete file hashes, byte-range seeking, and download filenames.
 3. Run `npm start` to review the page. Commit source changes to Git when ready.
 

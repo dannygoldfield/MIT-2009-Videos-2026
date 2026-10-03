@@ -27,9 +27,9 @@ test('every Vercel preview, original download, and audio link resolves to a stat
   }
 });
 
-test('all forty static MP4s match the approved source bytes, including verticals 48–53', async () => {
-  assert.equal(catalog.length, 40);
-  assert.deepEqual(catalog.filter(r => r.number >= 48).map(r => r.number), [48, 49, 50, 51, 52, 53]);
+test('all forty-three static MP4s match the source bytes, including duration tests 54–56', async () => {
+  assert.equal(catalog.length, 43);
+  assert.deepEqual(catalog.filter(r => r.number >= 48).map(r => r.number), [48, 49, 50, 51, 52, 53, 54, 55, 56]);
   for (const record of catalog) {
     const video = new URL(record.file, site);
     const hash = createHash('sha256');
